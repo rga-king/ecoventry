@@ -1,0 +1,33 @@
+/*
+*  ARTWORK - artwork.html
+*/
+
+#art-gallery /* grid control (to Major Tom) */
+{
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(376px, 1fr));
+  grid-gap: 1rem;
+}
+
+.art-gallery > div /* grid child */
+{
+  position: relative;
+  max-width: 100%;
+  margin: 0;
+  overflow: hidden;
+  box-shadow:  2px 2px 8px -4px rgba(94,93,93,0.87);
+  border-radius: 3px;
+}
+
+.art-gallery > div:hover
+{
+  opacity: 0.8;
+  cursor: pointer;
+}
+
+.art-gallery div img 
+{
+  width: 100%;
+  height: 376px;
+  object-fit: cover;
+}

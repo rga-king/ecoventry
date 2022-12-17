@@ -1,0 +1,45 @@
+/* CUSHIONS PAGE */
+
+#cushion-gallery-content
+{
+  /* background-color: rgb(230,230,230); */
+}
+
+#cushion-gallery /* grid control (to Major Tom) */
+{
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(672px, 1fr));
+  /* grid-template-columns: 50%; */
+  grid-gap: 1rem;
+  /* list-style-type: none; */
+  /* margin: 0 auto; */
+  /* width: 50%; */
+}
+
+.cushion-gallery > div /* grid child */
+{
+  box-shadow:  2px 2px 8px -4px rgba(94,93,93,0.87);
+  min-width: 100%;
+  overflow: hidden;
+  position: relative;
+  margin: 0;
+  display: flex;
+  /* width: 50%; */
+  margin: 0 auto;
+
+}
+
+.cushion-images 
+{
+  width: 50%;
+  height: auto; 
+  display: flex;
+  flex-direction: column;
+  /* border: 5px solid red; */
+}
+
+.cushion-product-details
+{
+  min-width: 50%;
+}
+

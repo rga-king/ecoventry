@@ -1,0 +1,21 @@
+@import url('https://fonts.googleapis.com/css2?family=Libre+Baskerville:wght@400;700&family=Mate&family=Palanquin:wght@100&display=swap');
+
+:root {
+  --green1: #effad2;
+  --green2: #f4fae3;
+  --green3: #f7faed;
+  --green4: #f4f5f0;
+  --green5: #f4f5f0;
+  --grey-dark: #404040;
+  --grey-light: #999;
+  --link-green: #6B8E23;
+}
+
+/* GENERIC STYLES */
+
+html, body 
+{
+  font-size: 16px;
+  margin: 0;
+  padding: 0;
+}

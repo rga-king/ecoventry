@@ -1,0 +1,99 @@
+<html>
+	<head>
+		<link rel="stylesheet" href="./css/root.css">
+		<link rel="stylesheet" href="./css/site.css">
+    <link rel="stylesheet" href="./css/artwork-grid.css">
+		<link rel="stylesheet" href="./css/gallery-viewer.css">
+		<script src="https://kit.fontawesome.com/3ff063b4b8.js" crossorigin="anonymous"></script>
+	</head>
+
+  <body>
+
+		<header>
+			<h1>Elizabeth M H Coventry</h1>
+			<h2>Botanical Artist</h2>
+			<nav>
+				<ul id="main-menu">
+					<li><a href="./index.html">HOME</a></li>
+					<li><a href="./artwork.html">ARTWORK</a></li>
+					<li><a href="./cards.html">CARDS</a></li>
+					<li><a href="./cushions.html">CUSHIONS</a></li>
+					<li class="nav-underline nav-cursor">FABRIC</li>
+					<li><a href="./about.html">ABOUT</a></li>
+					<li><a href="./order.html">HOW TO ORDER</a></li>
+				</ul>
+			</nav>
+		</header>
+
+    <div id="content">
+
+      <main id="art-gallery-content">
+
+				<section id="art-gallery" class="art-gallery">
+
+					<div onclick="loadFabricViewer('fabric_vitis')">
+						<img src="./images/art-gallery/previews/late-autumn-grapevine-preview.jpeg" />
+						<h3>GRAPEVINE FABRIC</h3>
+					</div>
+
+					<div onclick="loadFabricViewer('fabric_palm')">
+						<img src="./images/art-gallery/previews/palm-shadows-preview.jpeg" />
+						<h3>PALM FABRIC</h3>
+					</div>
+					
+					<div onclick="loadFabricViewer('fabric_wigandia')">
+						<img src="images/art-gallery/previews/wigandia-caracasana-preview.jpeg" />
+						<h3>WIGANDIA CARACASANA FABRIC</h3>				
+					</div>
+				
+				</section>
+
+      </main> <!-- ends #art-gallery-->
+
+		</div> <!-- ends #content-->
+
+		<footer>
+			&copy; Elizabeth Coventry - All rights reserved 2022
+			&nbsp; | &nbsp;
+			<a href="mailto:xxx@xxx.com">Contact Elizabeth</a>
+		</footer>
+
+
+		<div id="viewer">
+			<div>
+				<div id="viewer-content" class="viewer-content">
+					<div id="entry">
+						<h3 id="viewer-heading"></h3>
+						<p id="viewer-description"></p>
+					</div>
+					<div id="entry-details" class="entry-details">
+						<ul>
+							<li>
+									<span class="label">Detail 1</span> 
+									<span id="viewer-detail1" class="value"></span>
+							</li>
+							<li>
+								<span class="label">Detail 2</span> 
+								<span id="viewer-detail2" class="value"></span>
+							</li>
+							<li>
+								<span class="label">Detail 3</span> 
+								<span id="viewer-detail3" class="value"></span>
+							</li>
+						</ul>
+				</div>
+					<div id="third-column">
+					</div>
+				</div>
+			      <img id="viewer-img" src="" />
+			</div>
+			<button id="close-viewer" onclick="closeViewer()" class="noSelect">RETURN TO FABRICS</button>
+    </div>
+
+		<script src="./js/constants.js"></script>
+		<script src="./js/overlay-event-onclick.js"></script>
+
+
+  </body>
+
+</html>

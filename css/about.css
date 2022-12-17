@@ -1,0 +1,77 @@
+/*
+*  ABOUT - about.html
+*/
+
+#about-content
+{
+  display: flex;
+  width: 90%;
+  margin: 0 auto;
+}
+
+.header-left
+{
+  width: 25%;
+  background: url('../images/art-gallery/previews/allium-preview.png') bottom;
+}
+
+.header-left > h2
+{
+  padding-bottom: 20px;
+  background-color: rgba(255, 255, 255, 0.8);
+}
+
+#about-text,
+#about-awards
+{
+  display: flex;
+  flex-direction: column;
+}
+
+#about-text
+{
+  width: 100%;
+  margin: 0 50px;
+}
+
+#about-awards
+{
+  width: 50%;
+}
+
+figure.palm-prize,
+figure.wigandia-prize
+{
+  margin: 0 0 10px;
+  padding: 0;
+}
+
+figcaption
+{
+  padding: 8px 0;
+  font: 0.8rem/1.2 'Palanquin', sans-serif;
+}
+
+figcaption .caption-title
+{
+  display: block;
+  font-family: 'Times New Roman', Times, serif;
+}
+
+figure.palm-prize > img
+{
+  width: 100%;
+}
+
+figure.wigandia-prize > img
+{
+  height: 180px;
+  width: 100%;
+  object-fit: cover;
+}
+
+.derwent-img
+{
+  width: 30%;
+  height: auto;
+}

@@ -1,0 +1,69 @@
+/*
+*  HOME PAGE - index.html
+*/
+
+#content-wrapper
+{
+  display: flex;
+}
+
+#about-home
+{
+  min-width: 15%;
+  max-width: 20%;
+  background: url('../images/art-gallery/previews/nigella-flower-preview.jpeg') no-repeat bottom right/90% ;
+}
+
+#about-home > p
+{
+  padding-right: 20px;
+}
+
+#about-home > p.opening-para
+{
+  font-family: 'Libre Baskerville', serif;
+  line-height: 1.5em;
+  font-size: 1.1rem;
+}
+
+.highlight
+{
+  font-weight: 800; 
+  color: darkolivegreen;
+}
+
+.about-home-copy
+{
+  font-size: 1.1rem;
+}
+
+#product-range-row-a,
+#product-range-row-b
+{
+  display: flex;
+  justify-content: flex-start;
+  width: 100%;
+}
+
+.product
+{
+  width: 50%;
+  margin: 0 0 20px 20px;
+  box-shadow:  2px 2px 8px -4px rgba(94,93,93,0.87);
+  border-radius: 10px;
+}
+
+.product > h3
+{
+  margin: 0;
+  padding: 8px;
+  font-size: 1.2rem;
+  border-bottom: 1px solid ;
+}
+
+.product > img
+{
+  width: 100%;
+  height: 300px;
+  object-fit: cover;
+}

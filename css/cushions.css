@@ -1,0 +1,98 @@
+/*
+*  CUSHIONS - cushions.html
+*/
+
+#cushion-gallery-content
+{
+  width: 100%;
+  margin: 0 auto;
+}
+
+.cushion-gallery-entry
+{
+  display: flex;
+  margin-bottom: 20px;
+  box-shadow:  2px 2px 8px -4px rgba(94,93,93,0.87);
+  font-family: 'Palanquin', sans-serif;
+}
+
+.cushion-gallery-entry img 
+{
+  width: 30%;
+  height: auto; 
+  padding: 6px;
+  object-fit: cover;
+  object-position: center;
+}
+
+#entry-details
+{
+  width: 100%;
+}
+
+.entry-details ul
+{
+  list-style-type: none;
+  padding: 0;
+  margin: 0 6px 6px;
+}
+
+.entry-details ul li
+{
+  display: grid;
+  grid-template-columns: 2fr 5fr;
+  line-height: 1.3em;
+  font-size: 1rem;
+}
+
+.label, 
+.value
+{
+  margin-top: 6px;
+  padding: 7px 0 7px 10px;
+  border-radius: 2px;
+}
+
+.label
+{
+  background-color: darkolivegreen;
+  color: white;
+}
+
+.value
+{
+  margin-left: 3px;
+  background-color: var(--green1);
+}
+
+.entry-details ul li:last-child span.label
+{
+  background-color: blueviolet;
+}
+
+#fabric-information
+{
+  background-image: url('../images/cushion-gallery/Iris-1-side-A-cushion.jpeg');
+  background-position: center;
+}
+
+#fabric-information > a
+{
+  display: inline-block;
+  background-color: rgba(255, 255, 255, 0.75);
+  padding: 2px 5px;
+  border-radius: 2px;
+  color: #000;
+}
+
+/* 
+#fabric-information > a:hover
+{
+  should this inherit settings?
+}
+
+#fabric-information > a:visited
+{
+    should this inherit settings?
+} */
+

@@ -1,0 +1,37 @@
+/*
+*  CARDS - cards.html
+*/
+
+.card-gallery /* grid control (to Major Tom) */
+{
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  grid-gap: 1rem;
+}
+
+.card-gallery > div /* grid child */
+{
+  position: relative;
+  max-width: 100%;
+  overflow: hidden;
+  margin: 0;
+  box-shadow:  2px 2px 8px -4px rgba(94,93,93,0.87);
+}
+
+.card-gallery > div > img 
+{
+  width: auto;
+  height: 350px;
+  object-fit: cover;
+}
+
+.card-gallery > div > h3
+{
+  text-align: center;
+}
+
+.card-gallery-section
+{
+  margin-bottom: 20px;
+}
+

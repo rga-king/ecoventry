@@ -1,0 +1,49 @@
+/*
+*  HOW TO ORDER PAGE - order.html
+*/
+
+#how-to-order-form
+{
+  width: 50%;
+  margin: 0 auto;
+}
+
+#how-to-order-form > label
+{
+  display: block;
+  margin-top: 10px;
+  font: .88rem/1.6 "Times New Roman", Times, serif;
+  letter-spacing: .06em;  
+  text-transform: uppercase;
+  color: var(--grey1);
+}
+
+.form-input
+{
+  width: 100%;
+  padding: 10px;
+  font: .88rem 'Palanquin', sans-serif;
+  color: var(--grey1);
+  border: 1px solid #ccc;
+  background-color: #fafafa;
+  border-radius: 2px;
+}
+
+#submit-order-form
+{
+  margin-top: 20px;
+  padding: 1em 2.5em;
+  font: .88rem "Times New Roman", Times, serif;
+  text-align: center;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  color: #fff;
+  background-color: #272727;
+  border-width: 0;
+  cursor: pointer;
+}
+
+#submit-order-form:hover
+{
+  background-color: var(--grey-dark);
+}
