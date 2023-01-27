@@ -45,6 +45,15 @@ h3
   color: var(--grey1);
 }
 
+@media only screen and (max-width: 650px) {
+
+  h1 { font-size: 2rem; }
+}
+@media only screen and (max-width: 440px) {
+
+  h1 { font-size: 1.5rem; }
+}
+
 p
 {
   margin: 0 0 10px;
@@ -52,12 +61,11 @@ p
   line-height: 1.8rem;
 }
 
-
 /* NAVIGATION */
 
 nav
 {
-  width: 60%;
+  width: 100%;
   margin: 0 auto;
   padding: 10px;
 }
@@ -74,20 +82,23 @@ nav
 #main-menu li 
 {
   display: inline;
-  margin: 15px;
+  margin: 5px;
+  padding: 10px 10px 5px;
   color: var(--grey-dark);
+  background-color: rgb(255, 255, 255, 0.65);
+  border-radius: 8px;
 }
 
-#main-menu li,
-#main-menu a 
+#main-menu li:hover 
 {
-  padding-bottom: 5px;
+  border-bottom: 3px var(--green1) solid;
 }
 
 #main-menu a,
 #main-menu a:visited, 
 #main-menu a:hover 
 {
+  width: 100%;
   text-decoration: none;
 }
 
@@ -102,14 +113,24 @@ nav
   color: var(--grey-dark);
 }
 
-.nav-underline, 
-#main-menu a:hover 
-{
-  border-bottom: 5px var(--green1) solid;
-}
 .nav-cursor
 {
   cursor: default;
+}
+
+@media only screen and (max-width: 780px) {
+
+  #main-menu li 
+  {
+    padding: 5px 5px 3px;
+  }
+
+  #main-menu a,
+  #main-menu a:visited, 
+  #main-menu a:hover
+  {
+    font-size: 1rem;
+  }
 }
 
 /* FOOTER */
