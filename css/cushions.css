@@ -62,12 +62,17 @@
 .value
 {
   margin-left: 3px;
-  background-color: var(--green1);
+  background-color: var(--green6);
 }
 
 .entry-details ul li:last-child span.label
 {
-  background-color: blueviolet;
+  /* color: #452F6B; */
+  /* color: white; */
+  /* background-color: #dad0ed; */
+  background-color: #452F6B;
+
+
 }
 
 #fabric-information

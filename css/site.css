@@ -91,7 +91,7 @@ nav
 
 #main-menu li:hover 
 {
-  border-bottom: 3px var(--green1) solid;
+  border-bottom: 3px var(--green6) solid;
 }
 
 #main-menu a,
@@ -111,6 +111,11 @@ nav
 #main-menu a:hover 
 {
   color: var(--grey-dark);
+}
+
+.nav-underline
+{
+  border-bottom: 3px var(--green6) solid;
 }
 
 .nav-cursor
@@ -187,8 +192,17 @@ a.link:hover
 #content
 {
   margin: 40px auto 0 auto;
-  width: 75%;
+  width: 85%;
   z-index: -1;
+}
+
+@media only screen and (min-width: 1570px) {
+  #content
+  {
+    /* margin: 40px auto 0 auto; */
+    width: 75%;
+    /* z-index: -1; */
+  }
 }
 
 /* ---------------------------------------------------------------*/
