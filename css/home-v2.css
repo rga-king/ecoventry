@@ -14,8 +14,8 @@
   width: 40%;
   /* min-width: 15%;
   max-width: 20%; */
-  /* background: url('../images/art-gallery/previews/nigella-flower-preview.jpeg') no-repeat bottom center/50% ; */
-  background: url('../images/art-gallery/previews/nigella-split-seed-pod-preview.jpeg') no-repeat bottom center/55% ;
+  /* background: url('../images/art-gallery/previews/nigella-flower.jpeg') no-repeat bottom center/50% ; */
+  background: url('../images/art-gallery/previews/nigella-split-seed-pod.jpeg') no-repeat bottom center/55% ;
 }
 
 #about-home > p
@@ -44,7 +44,7 @@
 /* #home-about-img
 {
   width: 20%;
-  background: url('../images/art-gallery/previews/nigella-flower-preview.jpeg') no-repeat ;
+  background: url('../images/art-gallery/previews/nigella-flower.jpeg') no-repeat ;
 
 
 } */

@@ -1,10 +1,11 @@
 <html>
 	<head>
+		<meta charset=utf8 />
 		<link rel="stylesheet" href="./css/root.css">
 		<link rel="stylesheet" href="./css/site.css">
-    <link rel="stylesheet" href="./css/artwork-grid.css">
+   	<link rel="stylesheet" href="./css/artwork-grid.css">
 		<link rel="stylesheet" href="./css/gallery-viewer.css">
-		<link rel="stylesheet" href="./css/product-details-grid.css">
+		<!-- <link rel="stylesheet" href="./css/product-details-grid.css"> -->
 		<!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/> -->
 		<script src="https://kit.fontawesome.com/3ff063b4b8.js" crossorigin="anonymous"></script>
 	</head>
@@ -16,13 +17,14 @@
 			<h2>Botanical Artist</h2>
 			<nav>
         <ul id="main-menu">
-					<li><a href="./index.html">HOME</a></li>
+			    <li><a href="./index.html">HOME</a></li>
           <li class="nav-underline nav-cursor">ARTWORK</li>
 					<li><a href="./cards.html">CARDS</a></li>
           <li><a href="./cushions.html">CUSHIONS</a></li>
           <li><a href="./fabric.html">FABRIC</a></li>
           <li><a href="./about.html">ABOUT</a></li>
-          <li><a href="./order.html">HOW TO ORDER</a></li>
+		      <li><a href="./order.html">ORDER</a></li>
+          <!-- <li><a href="./newsandcontact.html">NEWS & CONTACT</a></li> -->
         </ul>
       </nav>
 		</header>
@@ -34,35 +36,191 @@
 				<section id="art-gallery" class="art-gallery">
 
 					<div onclick="loadViewer('lateAutumnGrapevine')">
-						<img src="./images/art-gallery/previews/late-autumn-grapevine-preview.jpeg" />
+						<img src="./images/art-gallery/previews/late-autumn-grapevine.jpeg" />
 						<h3>LATE AUTUMN GRAPEVINE</h3>
 					</div>
 
 					<div onclick="loadViewer('palmShadows')">
-						<img src="./images/art-gallery/previews/palm-shadows-preview.jpeg" />
+						<img src="./images/art-gallery/previews/palm-shadows.jpeg" />
 						<h3>PALM SHADOWS</h3>
 					</div>
 					
 					<div onclick="loadViewer('wigandiaCaracasana')">
-						<img src="images/art-gallery/previews/wigandia-caracasana-preview.jpeg" />
+						<img src="images/art-gallery/previews/wigandia-caracasana.jpeg" />
 						<h3>WIGANDIA CARACASANA</h3>				
 					</div>
 
 					<div onclick="loadViewer('bindweedOnCotoneaster')">
-						<img src="images/art-gallery/previews/bindweed-on-cotoneaster-preview.jpeg" />
+						<img src="images/art-gallery/previews/bindweed-on-cotoneaster.jpeg" />
 						<h3>BINDWEED ON COTONEASTER</h3>				
 					</div>
 
 					<div onclick="loadViewer('weepingWillow')">
-						<img src="images/art-gallery/previews/weeping-willow-preview.png" />
+						<img src="images/art-gallery/previews/weeping-willow.png" />
 						<h3>WEEPING WILLOW</h3>				
 					</div>
 
 					<div onclick="loadViewer('spanishGrapevine')">
-						<img src="images/art-gallery/previews/spanish-grapevine-preview.jpeg" />
+						<img src="images/art-gallery/previews/spanish-grapevine.jpeg" />
 						<h3>SPANISH GRAPEVINE</h3>				
 					</div>
-				
+
+					<div onclick="loadViewer('monsteraDeliciosaLeaf')">
+						<img src="images/art-gallery/previews/monstera-deliciosa-leaf.jpeg" />
+						<h3>MONSTERA DELICIOSA LEAF</h3>
+					</div>
+
+					<div onclick="loadViewer('monsteraDeliciosaSpadixAndFruit')">
+						<img src="images/art-gallery/previews/monstera-deliciosa-spadix-and-fruit.jpeg" />
+						<h3>MONSTERA DELICIOSA SPADIX AND FRUIT</h3>				
+					</div>
+
+					<div onclick="loadViewer('cornflower')">
+						<img src="images/art-gallery/previews/cornflower.jpeg" />
+						<h3>CORNFLOWER</h3>				
+					</div>
+
+					<div onclick="loadViewer('yuccaAloifolia')">
+						<img src="images/art-gallery/previews/yucca-aloifolia.jpeg" />
+						<h3>YUCCA ALOIFOLIA</h3>				
+					</div>
+
+					<div onclick="loadViewer('nigellaFlower')">
+						<img src="images/art-gallery/previews/nigella-flower.jpeg" />
+						<h3>NIGELLA FLOWER</h3>				
+					</div>
+
+					<div onclick="loadViewer('nigellaSplitSeedPod')">
+						<img src="images/art-gallery/previews/nigella-split-seed-pod.jpeg" />
+						<h3>NIGELLA SPLIT SEED POD</h3>				
+					</div>
+
+					<div onclick="loadViewer('palmStalks')">
+						<img src="images/art-gallery/previews/palm-stalks.jpeg" />
+						<h3>PALM STALKS</h3>				
+					</div>
+
+					<div onclick="loadViewer('arundoDonax')">
+						<img src="images/art-gallery/previews/arundo-donax.jpeg" />
+						<h3>ARUNDO DONAX</h3>				
+					</div>
+
+					<div onclick="loadViewer('fanPalm')">
+						<img src="images/art-gallery/previews/fan-palm.jpeg" />
+						<h3>FAN PALM</h3>				
+					</div>
+
+					<div onclick="loadViewer('spanishWalnut')">
+						<img src="images/art-gallery/previews/spanish-walnut.jpeg" />
+						<h3>SPANISH WALNUT</h3>				
+					</div>
+
+					<div onclick="loadViewer('dahlia')">
+						<img src="images/art-gallery/previews/dahlia.jpeg" />
+						<h3>DAHLIA</h3>				
+					</div>
+
+					<div onclick="loadViewer('honeysuckle')">
+						<img src="images/art-gallery/previews/honeysuckle.jpeg" />
+						<h3>HONEYSUCKLE</h3>				
+					</div>
+
+					<div onclick="loadViewer('zantedeschiaLeaves')">
+						<img src="images/art-gallery/previews/zantedeschia-leaves.jpeg" />
+						<h3>ZANTEDESCHIA LEAVES</h3>				
+					</div>
+
+					<div onclick="loadViewer('pulsatillaVulgaris')">
+						<img src="images/art-gallery/previews/pulsatilla-vulgaris.jpeg" />
+						<h3>PULSATILLA VULGARIS
+            </h3>				
+					</div>
+
+					<div onclick="loadViewer('agave')">
+						<img src="images/art-gallery/previews/agave.jpeg" />
+						<h3>AGAVE</h3>				
+					</div>
+
+					<div onclick="loadViewer('smallwoodClematis')">
+						<img src="images/art-gallery/previews/smallwood-clematis.jpeg" />
+						<h3>SMALLWOOD CLEMATIS</h3>				
+					</div>
+
+					<div onclick="loadViewer('cotoneaster')">
+						<img src="images/art-gallery/previews/cotoneaster.jpeg" />
+						<h3>COTONEASTER</h3>				
+					</div>
+
+					<div onclick="loadViewer('irisFoetidissima')">
+						<img src="images/art-gallery/previews/iris-foetidissima.jpeg" />
+						<h3>IRIS FOETIDISSIMA</h3>				
+					</div>
+
+					<div onclick="loadViewer('gladiolusAcidanthera')">
+						<img src="images/art-gallery/previews/gladiolus-acidanthera.jpeg" />
+						<h3>GLADIOLUS ACIDANTHERA</h3>				
+					</div>
+
+					<div onclick="loadViewer('carob')">
+						<img src="images/art-gallery/previews/carob.jpeg" />
+						<h3>CAROB</h3>				
+					</div>
+
+					<div onclick="loadViewer('cyclamen')">
+						<img src="images/art-gallery/previews/cyclamen.jpeg" />
+						<h3>CYCLAMEN</h3>				
+					</div>
+
+					<div onclick="loadViewer('viburnumOpulus')">
+						<img src="images/art-gallery/previews/viburnum-opulus.jpeg" />
+						<h3>VIBURNUM OPULUS</h3>				
+					</div>
+
+					<div onclick="loadViewer('purpleSage')">
+						<img src="images/art-gallery/previews/purple-sage.png" />
+						<h3>PURPLE SAGE</h3>
+					</div>
+
+					<div onclick="loadViewer('alliumArt')">
+						<img src="images/art-gallery/previews/allium-art.png" />
+						<h3>ALLIUM "ART"</h3>
+					</div>
+
+					<div onclick="loadViewer('japaneseAnemoneLeaf')">
+						<img src="images/art-gallery/previews/japanese-anemone-leaf.jpeg" />
+						<h3>JAPANESE ANEMONE LEAF</h3>
+					</div>
+
+					<div onclick="loadViewer('thalictrum')">
+						<img src="images/art-gallery/previews/thalictrum.jpeg" />
+						<h3>THALICTRUM</h3>
+					</div>
+
+					<div onclick="loadViewer('geraniumCanariense')">
+						<img src="images/art-gallery/previews/geranium-canariense.jpeg" />
+						<h3>GERANIUM CANARIENSE</h3>	
+					</div>
+
+					<div onclick="loadViewer('geraniumCanarienseLeaf')">
+						<img src="images/art-gallery/previews/geranium-canariense-leaf.jpeg" />
+						<h3>GERANIUM CANARIENSE LEAF</h3>
+					</div>
+
+					<div onclick="loadViewer('nigellaSeedPod')">
+						<img src="images/art-gallery/previews/nigella-seed-pod.jpeg" />
+						<h3>NIGELLA SEED POD</h3>
+					</div>
+
+					<div onclick="loadViewer('clematisEdda')">
+						<img src="images/art-gallery/previews/clematis-edda.jpeg" />
+						<h3>CLEMATIS EDDA</h3>
+					</div>
+
+					<div onclick="loadViewer('cotinusCoggygria')">
+						<img src="images/art-gallery/previews/cotinus-coggygria.jpeg" />
+						<h3>COTINUS COGGYGRIA</h3>
+					</div>
+
 				</section>
 
 			</main> 
@@ -72,7 +230,7 @@
 		<footer>
 			&copy; Elizabeth Coventry - All rights reserved 2022
 			&nbsp; | &nbsp;
-			<a href="mailto:xxx@xxx.com">Contact Elizabeth</a>
+			<a class="link" href="mailto:xxx@xxx.com">Contact Elizabeth</a>
 		</footer>
 
 
@@ -106,10 +264,11 @@
 				</div>
 			  <img id="viewer-img" src="./images/art-gallery/late-autumn-grapevine-wm.jpeg" />
 			</div>
-			<button id="close-viewer" onclick="closeViewer()" class="noSelect">RETURN TO GALLERY</button>
+			<button id="close-viewer" onclick="closeViewer()" class="noSelect">RETURN TO ARTWORK</button>
 			<!-- <i class="fa-solid fa-xmark"></i> -->
     </div>
 
+		<script src="./js/artwork-meta.js"></script>
 		<script src="./js/constants.js"></script>
 		<script src="./js/overlay-event-onclick.js"></script>
 

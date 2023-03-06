@@ -7,7 +7,7 @@ header
   position: relative;
   width: 100%;
   padding-top: 50px;
-  background: url('../images/art-gallery/previews/viburnum-opulus-preview.jpeg') no-repeat ;
+  background: url('../images/art-gallery/previews/viburnum-opulus.jpeg') no-repeat ;
   background-position: left -100px top -150px;
   box-shadow: 0px 23px 5px -25px rgba(0,0,0,0.87);
   text-align: center;
@@ -45,12 +45,13 @@ h3
   color: var(--grey1);
 }
 
-@media only screen and (max-width: 650px) {
-
+@media only screen and (max-width: 650px) 
+{
   h1 { font-size: 2rem; }
 }
-@media only screen and (max-width: 440px) {
 
+@media only screen and (max-width: 440px) 
+{
   h1 { font-size: 1.5rem; }
 }
 
@@ -169,8 +170,14 @@ a.link
 a.link:hover
 {
   text-decoration: none;
-  color: pink;
+  color: var(--link-green);
 }
+
+/* a.link:visited
+{
+  text-decoration: none;
+  color: var(--link-green);
+} */
 
 .additional-info
 {

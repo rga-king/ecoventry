@@ -25,7 +25,7 @@
   object-position: center;
 }
 
-#entry-details
+.entry-details
 {
   width: 100%;
 }
@@ -41,7 +41,7 @@
 {
   display: grid;
   grid-template-columns: 2fr 5fr;
-  line-height: 1.3em;
+  line-height: 1.6em;
   font-size: 1rem;
 }
 
@@ -70,7 +70,7 @@
   /* color: #452F6B; */
   /* color: white; */
   /* background-color: #dad0ed; */
-  background-color: #452F6B;
+  /* background-color: #452F6B; */
 
 
 }
