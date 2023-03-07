@@ -31,3 +31,8 @@
   height: 376px;
   object-fit: cover;
 }
+
+#viewer-img
+{
+  background-color: #fff;
+}

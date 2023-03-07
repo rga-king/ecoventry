@@ -464,7 +464,7 @@ const artGallery = {
     print: "£85",
     images: {
       preview: "clematis-edda.jpeg",
-      main: "clematis-edda-wm.png"
+      main: "clematis-edda-wm.jpeg"
     }
   },
   cotinusCoggygria: {
@@ -477,7 +477,7 @@ const artGallery = {
     print: "£50",
     images: {
       preview: "cotinus-coggygria.jpeg",
-      main: "cotinus-coggygria-wm.png"
+      main: "cotinus-coggygria-wm.jpeg"
     }
   }
 }
