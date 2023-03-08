@@ -5,17 +5,23 @@
 #about-content
 {
   display: flex;
-  width: 90%;
+  width: 100%;
   margin: 0 auto;
 }
 
-.header-left
+.col-left
 {
-  width: 25%;
-  background: url('../images/art-gallery/previews/allium.png') bottom;
+  width: 30%;
+  /* background: url('../images/art-gallery/previews/allium.png') bottom;
+  background-position: 90%; */
 }
 
-.header-left > h2
+.col-left > img
+{
+  width: 100%;
+}
+
+#about-text > h2
 {
   padding-bottom: 20px;
   background-color: rgba(255, 255, 255, 0.8);

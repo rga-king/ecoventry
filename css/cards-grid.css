@@ -11,18 +11,26 @@
 
 .card-gallery > div /* grid child */
 {
-  position: relative;
-  max-width: 100%;
+  /* position: relative; */
+  /* max-width: 100%; */
   overflow: hidden;
-  margin: 0;
+  /* margin: 0; */
   box-shadow:  2px 2px 8px -4px rgba(94,93,93,0.87);
+  /* padding: 20px; */
 }
 
-.card-gallery > div > img 
+.card-img
+{
+  display: flex;
+  justify-content: center;
+}
+
+.card-img > img
 {
   width: auto;
   height: 350px;
   object-fit: cover;
+  padding-top: 10px;
 }
 
 .card-gallery > div > h3
