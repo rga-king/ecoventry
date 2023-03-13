@@ -1,56 +1,104 @@
-/*
-*  HOME PAGE - index.html
-*/
+/* HOME PAGE STYLES */
 
-#content-wrapper
+.home-section-wrapper
 {
-  display: flex;
+  width: 100%;
+  box-shadow: 0px 23px 5px -25px rgba(0,0,0,0.87);
 }
 
-#about-home
+.artwork-feature,
+.product-range
 {
-  min-width: 15%;
-  max-width: 20%;
-  background: url('../images/art-gallery/previews/nigella-split-seed-pod.jpeg') no-repeat;
-  background-size: 110%;
-  background-position: bottom 50px right 10px;
+  width: 1000px;
 }
 
-#about-home > p
+.intro-text
 {
-  padding-right: 20px;
+  width: 1100px;
 }
 
-#about-home > p.opening-para
+.intro-text,
+.artwork-feature,
+.product-range
+{
+  margin: 0 auto;
+}
+
+
+header.header-home
+{
+  background-position: right 120px top -50px;
+  background-size: 20%;
+}
+
+.intro-text
+{
+  padding: 40px 0 30px;
+  background: url('../images/art-gallery/previews/clematis-edda.jpeg') no-repeat;
+  background-position: left -30px top -130px;
+  background-size: 30%;
+}
+
+.intro-text > p
+{
+  padding-left: 225px;
+  padding-right: 160px;
+}
+
+p.opening-para
 {
   font-family: 'Libre Baskerville', serif;
   line-height: 1.5em;
-  font-size: 1.1rem;
+  font-size: 1.3rem;
 }
 
 .highlight
 {
   font-weight: 800; 
-  color: darkolivegreen;
+  color: var(--green-dk);
 }
 
 .about-home-copy
 {
-  font-size: 1.1rem;
+  font-size: 1.15rem;
 }
 
-#product-range-row-a,
-#product-range-row-b
+.artwork-feature
+{
+  padding-bottom: 40px;
+  box-shadow: 0px 23px 5px -25px rgba(0,0,0,0.87);
+}
+
+.artwork-feature > div
+{
+  box-shadow:  2px 2px 8px -4px rgba(94,93,93,0.87);
+}
+
+.artwork-feature > div > img
+{
+  width: 90%;
+  height: auto;
+  border-radius: 5px;
+}
+
+.artwork-feature > h3,
+.product-range > h3
+{
+  font-size: 1.5rem;
+  margin: 30px 0;
+  color: var(--purple);
+}
+
+.product-range > div
 {
   display: flex;
-  justify-content: flex-start;
-  width: 100%;
+  justify-content: space-between;
 }
 
 .product
 {
-  width: 50%;
-  margin: 0 0 20px 20px;
+  width: 30%;
+  margin: 0 0 20px 0px;
   box-shadow:  2px 2px 8px -4px rgba(94,93,93,0.87);
   border-radius: 10px;
 }
@@ -63,15 +111,9 @@
   border-bottom: 1px solid ;
 }
 
-.product > img,
-.product > a > img
+.product > img
 {
   width: 100%;
-  height: 300px;
+  height: 230px;
   object-fit: cover;
-}
-
-.product > a:hover
-{
-    opacity: 0.8;
 }

@@ -6,16 +6,18 @@ header
 {
   position: relative;
   width: 100%;
-  padding-top: 50px;
-  background: url('../images/art-gallery/previews/viburnum-opulus.jpeg') no-repeat ;
-  background-position: left -100px top -150px;
+  padding-top: 40px;
+  padding-bottom: 15px;
+  background: url('../images/art-gallery/previews/viburnum-opulus.jpeg') no-repeat;
+  background-position: left 50px top -50px;
+  background-size: 20%;
   box-shadow: 0px 23px 5px -25px rgba(0,0,0,0.87);
   text-align: center;
 }
 
 header > h2
 {
-  padding-bottom: 40px;
+  padding-bottom: 30px;
 }
 
 h1, h2 
@@ -69,6 +71,8 @@ nav
   width: 100%;
   margin: 0 auto;
   padding: 10px;
+  box-shadow: 0px -23px 5px -25px rgba(0,0,0,0.87);
+
 }
 
 #main-menu 
@@ -78,45 +82,54 @@ nav
   margin: 0;
   text-align: center;
   font-size: 1.25rem;
+  /* display: inline-block; */
 }
 
 #main-menu li 
 {
   display: inline;
   margin: 5px;
-  padding: 10px 10px 5px;
+  /* padding: 10px 10px 5px; */
   color: var(--grey-dark);
-  background-color: rgb(255, 255, 255, 0.65);
-  border-radius: 8px;
+  /* background-color: rgb(255, 255, 255, 0.65); */
+  /* border-radius: 8px; */  
 }
 
 #main-menu li:hover 
 {
-  border-bottom: 3px var(--green6) solid;
+  /* border-bottom: 3px var(--green6) solid; */
 }
 
-#main-menu a,
-#main-menu a:visited, 
-#main-menu a:hover 
+#main-menu a
 {
   width: 100%;
+  padding: 5px 10px;
+  border-radius: 5px;
+  background-color: rgb(255, 255, 255, 0.65);
   text-decoration: none;
 }
 
 #main-menu a,
 #main-menu a:visited 
 {
-  color: var(--grey-light);
+  color: var(--purple);
 }
 
 #main-menu a:hover 
 {
-  color: var(--grey-dark);
+  color: var(--purple);
+  box-shadow: .5px .5px 3px 1px rgba(204, 204, 204,1);
 }
 
-.nav-underline
+.menu-this
 {
-  border-bottom: 3px var(--green6) solid;
+  width: 100%;
+  padding: 5px 10px;
+  border-radius: 5px;
+  background-color: rgb(255, 255, 255, 0.65);
+  color: var(--purple);
+  box-shadow: .5px .5px 3px 1px rgba(204, 204, 204,1);
+  cursor: default;
 }
 
 .nav-cursor
@@ -143,15 +156,13 @@ nav
 
 footer 
 {
+  margin-top: 40px;
+  padding: 50px 0;
   font-family: var(--font3);
   font-size: 1.25rem;
   color: var(--grey-dark);
-  padding: 50px 0;
   text-align: center;
   box-shadow: 0px -23px 5px -25px rgba(0,0,0,0.87);
-
-  /* box-shadow: 0px -4px 5px -6px rgba(0,0,0,0.75); */
-  margin-top: 40px;
 }
 
 /* footer > a
@@ -163,15 +174,17 @@ footer
 
 a.link
 {
-  text-decoration: underline;
-  color: darkolivegreen;
+  text-decoration: none;
+  border-bottom: 1px dashed var(--purple);
+  color: var(--green-dk);
   transition: all 0.1s linear;
 }
 
 a.link:hover
 {
+  border-bottom: 1px dashed white;
   text-decoration: none;
-  color: var(--link-green);
+  color: var(--purple);
 }
 
 /* a.link:visited
