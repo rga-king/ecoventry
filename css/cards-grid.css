@@ -40,6 +40,13 @@
 
 .card-gallery-section
 {
-  margin-bottom: 20px;
+  margin-bottom: 40px;
+  font-size: 1.25rem;
+}
+.card-gallery-section > h2,
+.card-gallery-section > p
+{
+  display: inline;
+  margin-right: 10px;
 }
 

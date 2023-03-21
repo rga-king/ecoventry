@@ -15,6 +15,11 @@ header
   text-align: center;
 }
 
+.header-page
+{
+  padding-top: 20px;
+}
+
 header > h2
 {
   padding-bottom: 30px;
@@ -45,6 +50,45 @@ h3
   text-align: center;
   letter-spacing: .06em;
   color: var(--grey1);
+}
+
+.page-header
+{
+  display: flex;
+  /* width: 100%; */
+  justify-content: center;
+  margin: 20px 0 30px;
+}
+
+.page-header > div
+{
+  width: 200px;
+  margin: 0;
+  border-top: 1px dotted grey;
+  border-bottom: 1px dotted grey;
+  display: flex;
+  justify-content: center;
+}
+.page-header > div > h3
+{
+  margin: auto;
+  font-size: 2rem;
+  text-align: left;
+  color: var(--purple);
+}
+
+.page-header > ul
+{
+  /* margin-left: 200px; */
+  /* width: 100%; */
+  padding-left: 50px;
+  margin: 0;
+  font-size: 1.1rem;
+}
+
+.page-header > ul > li
+{
+  padding: 2px;
 }
 
 @media only screen and (max-width: 650px) 
@@ -136,6 +180,34 @@ nav
 {
   cursor: default;
 }
+
+/* ---------------------------------------------------------------*/
+/* PAGE navigation */
+
+/* .page-navigation
+{
+  list-style-type: none;
+  margin: 15px auto;
+  display: flex;
+  justify-content: center;
+  padding-left: 0;
+  color: var(--green-dk);
+  font-size: 1.1rem;
+}
+
+.page-navigation > li
+{
+  display: inline;
+
+}
+
+.page-navigation > li:first-child
+{
+  margin-right: 40px;
+
+} */
+
+/* ---------------------------------------------------------------*/
 
 @media only screen and (max-width: 780px) {
 
@@ -238,3 +310,4 @@ a.link:hover
 {
   overflow: auto;
 }
+

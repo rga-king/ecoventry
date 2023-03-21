@@ -2,102 +2,102 @@
 *  CUSHIONS - cushions.html
 */
 
-#cushion-gallery-content
-{
-  width: 100%;
-  margin: 0 auto;
-}
-
-.cushion-gallery-entry
+.cushion-wrapper
 {
   display: flex;
-  margin-bottom: 20px;
   box-shadow:  2px 2px 8px -4px rgba(94,93,93,0.87);
-  font-family: 'Palanquin', sans-serif;
+  border-radius: 3px;
+  margin-bottom: 20px;
 }
 
-.cushion-gallery-entry img 
+.cushion-img
 {
-  width: 30%;
-  height: auto; 
-  padding: 6px;
-  object-fit: cover;
-  object-position: center;
+  width: 50%;
+  padding: 10px;
 }
 
-.entry-details
+.cushion-img > img
+{
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+}
+
+.cushion-thumb-wrapper
+{
+  display: flex;
+  flex-direction: column;
+  width: 10%;
+  padding: 10px;
+}
+
+.cushion-thumb
+{
+  
+}
+
+.cushion-thumb > img
 {
   width: 100%;
 }
 
-.entry-details ul
+.cushion-details
 {
-  list-style-type: none;
+  width: 40%;
+  /* margin: 30px auto; */
+  padding: 20px;
+  border-left: 1px dotted grey;
+  /* border-radius: 5px; */
+  margin: 10px 0 10px 10px;
+}
+
+.cushion-details > h2
+{
+  letter-spacing: .01em;
+  margin: 0;
+  font: 100 1.8rem "Times New Roman", Times, serif;
   padding: 0;
-  margin: 0 6px 6px;
+  text-transform: uppercase;
+
 }
 
-.entry-details ul li
+.cushion-details > ul
 {
+  letter-spacing: .01em;
+  font: 1rem 'Palanquin', sans-serif;
+  padding: 0 0 10px;
+  list-style-type: none;
+}
+
+.cushion-details > ul > li
+{
+  padding-top: 0px;
+  line-height: 1.5rem;
+
+}
+
+.cushion-options
+{
+  font: 1rem 'Palanquin', sans-serif;
+  /* background-color: antiquewhite; */
+  width: 90%;
   display: grid;
-  grid-template-columns: 2fr 5fr;
-  line-height: 1.6em;
-  font-size: 1rem;
+  grid-template-columns: 40% 40%;
+  gap: 10px;
+
 }
 
-.label, 
-.value
+.cushion-options > p
 {
-  margin-top: 6px;
-  padding: 7px 0 7px 10px;
-  border-radius: 2px;
+  padding: 6px 6px;
+  margin: 0;
+  border: 1px solid #ac57ae;
+  border-radius: 5px;
+  line-height: 1.2rem;
 }
 
-.label
+p.label
 {
-  background-color: darkolivegreen;
+  background-color: #ac57ae;
   color: white;
 }
-
-.value
-{
-  margin-left: 3px;
-  background-color: var(--green6);
-}
-
-.entry-details ul li:last-child span.label
-{
-  /* color: #452F6B; */
-  /* color: white; */
-  /* background-color: #dad0ed; */
-  /* background-color: #452F6B; */
-
-
-}
-
-#fabric-information
-{
-  background-image: url('../images/cushion-gallery/Iris-1-side-A-cushion.jpeg');
-  background-position: center;
-}
-
-#fabric-information > a
-{
-  display: inline-block;
-  background-color: rgba(255, 255, 255, 0.75);
-  padding: 2px 5px;
-  border-radius: 2px;
-  color: #000;
-}
-
-/* 
-#fabric-information > a:hover
-{
-  should this inherit settings?
-}
-
-#fabric-information > a:visited
-{
-    should this inherit settings?
-} */
-

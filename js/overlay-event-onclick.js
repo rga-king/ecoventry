@@ -4,7 +4,6 @@
   * Displays the overlay using clip-path
 */
 function loadViewer(id) {
-  console.log(id);
 
   const viewer = document.getElementById('viewer');
 
@@ -29,7 +28,6 @@ function loadViewer(id) {
 }
 
 function loadFabricViewer(id) {
-  console.log(id);
 
   const viewer = document.getElementById('viewer');
 
@@ -46,7 +44,7 @@ function loadFabricViewer(id) {
     const e = document.getElementById(`viewer-${entry}`);
     console.log(':: ', e);
     if (entry === 'img') {
-      e.src = `./images/art-gallery/${fabricGallery[id][entry]}`;
+      e.src = `./images/fabric-gallery/${fabricGallery[id][entry]}`;
     } else {
       e.innerHTML = fabricGallery[id][entry];
     }

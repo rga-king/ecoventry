@@ -3,16 +3,16 @@
 		<link rel="stylesheet" href="./css/root.css">
 		<link rel="stylesheet" href="./css/site.css">
     <link rel="stylesheet" href="./css/cushions.css">
-    <link rel="stylesheet" href="./css/product-details-grid.css">
+    <!-- <link rel="stylesheet" href="./css/product-details-grid.css"> -->
 		<!-- <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" /> -->
   </head>
 
   <body>
 
 
-    <header>
+    <header class="header-page">
       <h1>Elizabeth M H Coventry</h1>
-      <h2>Botanical Artist</h2>
+      <!-- <h2>Botanical Artist</h2> -->
       <nav>
         <ul id="main-menu">
           <li><a href="./index.html">HOME</a></li>
@@ -22,127 +22,679 @@
           <li><a href="./fabric.html">FABRIC</a></li>
           <li><a href="./about.html">ABOUT</a></li>
           <li><a href="./order.html">ORDER</a></li>
-          <li><a href="./newsandcontact.html">NEWS & CONTACT</a></li>
+          <li><a href="./news-and-events.html">NEWS & EVENTS</a></li>
         </ul>
       </nav>
     </header>
 
     <div id="content">
-
-      <main id="cushion-gallery-content">
-
-        <div class="additional-info">
-          <p>All the cushions are printed on both sides, sometimes with the same design, sometimes with a variation of the design.</p>
-          <p>They have a concealed zip for the easy removal of the cover. The cover should only be dry cleaned.</p>
-          <p>The pads are filled with feathers and the cushions can be ordered with or without the pads.</p>
+ 
+      <div class="page-header">
+        <div>
+          <h3>CUSHIONS</h3>
         </div>
+        <ul>
+          <li>All the cushions are printed on both sides, sometimes with the same design, sometimes with a variation of the design.</li>
+          <li>They have a concealed zip for the easy removal of the cover. The cover should only be dry cleaned.</li>
+          <li>The pads are filled with feathers and the cushions can be ordered with or without the pads.</li>          
+        </ul>
+      </div>
 
-				<section id="cushion-gallery" >
+      <div class="cushion-wrapper">
 
-          <div class="cushion-gallery-entry">
-            <img src="./images/cushion-gallery/Iris-1-side-A-cushion.jpeg" /> 
-            <img src="./images/cushion-gallery/Iris-1-side-B-cushion.jpeg" /> 
-            <div id="entry-details" class="entry-details">
-              <ul>
-                <li>
-                  <span class="label">Iris 1</span> 
-                  <span id="viewer-size" class="value">Sides A and B are different</span>
-                </li>
-
-                <li>
-                  <span class="label">40 cms X 40 cms</span> 
-                  <span id="viewer-size" class="value">£75 (cover only £68)</span>
-                </li>
-                <li>
-                  <span class="label">50 cms X 50 cms</span> 
-                  <span id="size-and-price" class="value">£88 (cover only £79)</span>
-                </li>
-                <li>
-                  <span class="label">Detail</span> 
-                  <span id="detail" class="value">Silk piping</span>
-                </li>
-                <li>
-                  <span class="label">Material</span> 
-                  <span id="material" class="value">60% cotton 40% linen</span>
-                </li>
-              </ul>
-            </div>
+        <div class="cushion-img">
+          <img id="thalictrum" src="./images/cushion-gallery/thalictrum-40-X-40.jpeg" />
+        </div>
+  
+        <div class="cushion-thumb-wrapper">
+            <div class="cushion-thumb"           
+            onclick="loadCushionImg(
+              'thalictrum',
+              'thalictrum-40-X-40.jpeg')">
+            <img src="./images/cushion-gallery/thalictrum-40-X-40.jpeg" />
+            <p>Size 40 x 40 cms</p>
           </div>
-
-          <div class="cushion-gallery-entry">
-            <img src="./images/cushion-gallery/Iris-2-side-A-cushion.jpeg" /> 
-            <img src="./images/cushion-gallery/Iris-2-side-B-cushion.jpeg" /> 
-            <div id="entry-details" class="entry-details">
-              <ul>
-                <li>
-                  <span class="label">Iris 2</span> 
-                  <span id="viewer-size" class="value">Sides A and B are different</span>
-                </li>
-
-                <li>
-                  <span class="label">40 cms X 40 cms</span> 
-                  <span id="viewer-size" class="value">£75 (cover only £68)</span>
-                </li>
-                <li>
-                  <span class="label">50 cms X 50 cms</span> 
-                  <span id="size-and-price" class="value">£88 (cover only £79)</span>
-                </li>
-                <li>
-                  <span class="label">Detail</span> 
-                  <span id="detail" class="value">Silk edging</span>
-                </li>
-                <li>
-                  <span class="label">Material</span> 
-                  <span id="material" class="value">100% polyester velvet</span>
-                </li>
-              </ul>
-            </div>
+          <div class="cushion-thumb"
+            onclick="loadCushionImg(
+              'thalictrum',
+              'thalictrum-50-X-50.jpeg')">
+            <img src="./images/cushion-gallery/thalictrum-50-X-50.jpeg" />
+            <p>Size 50 x 50 cms</p>
           </div>
-
-          <!-- <div class="cushion-gallery-entry">
-            <img src="./images/cushion-gallery/Iris-1-side-A-cushion.jpeg" /> 
-            <img src="./images/cushion-gallery/Iris-1-side-B-cushion.jpeg" /> 
-            <div id="entry-details" class="entry-details">
-              <ul>
-                <li>
-                  <span class="label">Sage 1</span> 
-                  <span id="viewer-size" class="value"></span>
-                </li>
-
-                <li>
-                  <span class="label">40 cms X 40 cms</span> 
-                  <span id="viewer-size" class="value">£75 (cover only £68)</span>
-                </li>
-                <li>
-                  <span class="label">50 cms X 50 cms</span> 
-                  <span id="size-and-price" class="value">£88 (cover only £79)</span>
-                </li>
-                <li>
-                  <span class="label">Detail</span> 
-                  <span id="detail" class="value">Silk piping</span>
-                </li>
-                <li>
-                  <span class="label">Material</span> 
-                  <span id="material" class="value">60% cotton 40% linen</span>
-                </li>
-              </ul>
-            </div>
-          </div> -->
-          
-
-
-				</section>
-
-      </main> <!-- ends #main-gallery-->
-
-      <footer>
-				&copy; Elizabeth Coventry - All rights reserved 2022
-				&nbsp; | &nbsp;
-        <a class="link" href="mailto:xxx@xxx.com">Contact Elizabeth</a>
-			</footer>
+        </div>
+  
+        <div class="cushion-details">
+          <h2>Thalictrum</h2>
+          <ul>
+            <li>Self edging</li>
+            <li>Printed with the same design on both sides</li>
+            <li>60% cotton, 40% linen</li>
+          </ul>
+  
+          <div class="cushion-options">
+            <p class="label">SIZE</p>
+            <p class="label">PRICE</p>
+            <p>40 cms X 40 cms</p>
+            <p>£75 (cover only £68)</p>
+            <p>50 cms X 50 cms</p>
+            <p>£88 (cover only £79)</p>
+          </div>
+        </div>
+  
+      </div> <!-- ENDS class="cushion-wrapper" -->
       
+      <div class="cushion-wrapper">
+  
+        <div class="cushion-img">
+          <img id="geraniumCaneriense" src="./images/cushion-gallery/geranium-caneriense-A.jpeg" />
+        </div>
+  
+        <div class="cushion-thumb-wrapper">
+            <div class="cushion-thumb"           
+            onclick="loadCushionImg(
+              'geraniumCaneriense',
+              'geranium-caneriense-A.jpeg')">
+            <img src="./images/cushion-gallery/geranium-caneriense-A.jpeg" />
+            <p>Front design</p>
+          </div>
+          <div class="cushion-thumb"
+            onclick="loadCushionImg(
+              'geraniumCaneriense',
+              'geranium-caneriense-B.jpeg')">
+            <img src="./images/cushion-gallery/geranium-caneriense-B.jpeg" />
+            <p>Back design</p>
+          </div>
+        </div>
+  
+        <div class="cushion-details">
+          <h2>Geranium caneriense</h2>
+          <ul>
+            <li>Silk piping</li>
+            <li>Printed with the same design on both sides</li>
+            <li>60% cotton, 40% linen</li>
+          </ul>
+  
+          <div class="cushion-options">
+            <p class="label">SIZE</p>
+            <p class="label">PRICE</p>
+            <p>40 cms X 40 cms</p>
+            <p>£75 (cover only £68)</p>
+            <p>50 cms X 50 cms</p>
+            <p>£88 (cover only £79)</p>
+          </div>
+        </div>
+  
+      </div> <!-- ENDS class="cushion-wrapper" -->
+      
+      <div class="cushion-wrapper">
+  
+        <div class="cushion-img">
+          <img id="geraniumCanerienseLeaf" src="./images/cushion-gallery/geranium-maderense-leaf-A.jpeg" />
+        </div>
+  
+        <div class="cushion-thumb-wrapper">
+            <div class="cushion-thumb"           
+            onclick="loadCushionImg(
+              'geraniumCanerienseLeaf',
+              'geranium-caneriense-leaf-A.jpeg')">
+            <img src="./images/cushion-gallery/geranium-maderense-leaf-A.jpeg" />
+            <p>Front design</p>
+          </div>
+          <div class="cushion-thumb"
+            onclick="loadCushionImg(
+              'geraniumCanerienseLeaf',
+              'geranium-caneriense-leaf-B.jpeg')">
+            <img src="./images/cushion-gallery/geranium-maderense-leaf-B.jpeg" />
+            <p>Back design</p>
+          </div>
+        </div>
+  
+        <div class="cushion-details">
+          <h2>Geranium Caneriense Leaf</h2>
+          <ul>
+            <li>Black wool fringing</li>
+            <li>Printed with the same design on both sides</li>
+            <li>60% cotton, 40% linen</li>
+          </ul>
+  
+          <div class="cushion-options">
+            <p class="label">SIZE</p>
+            <p class="label">PRICE</p>
+            <p>40 cms X 40 cms</p>
+            <p>£75 (cover only £68)</p>
+            <p>50 cms X 50 cms</p>
+            <p>£88 (cover only £79)</p>
+          </div>
+        </div>
+  
+      </div> <!-- ENDS class="cushion-wrapper" -->
+      
+      <div class="cushion-wrapper">
+  
+        <div class="cushion-img">
+          <img id="iris1" src="./images/cushion-gallery/iris-1-A.jpeg" />
+        </div>
+  
+        <div class="cushion-thumb-wrapper">
+            <div class="cushion-thumb"           
+            onclick="loadCushionImg(
+              'iris1',
+              'iris-1-A.jpeg')">
+            <img src="./images/cushion-gallery/iris-1-A.jpeg" />
+            <p>Front design</p>
+          </div>
+          <div class="cushion-thumb"
+            onclick="loadCushionImg(
+              'iris1',
+              'iris-1-B.jpeg')">
+            <img src="./images/cushion-gallery/iris-1-B.jpeg" />
+            <p>Back design</p>
+          </div>
+        </div>
+  
+        <div class="cushion-details">
+          <h2>Iris 1</h2>
+          <ul>
+            <li>Silk piping</li>
+            <li>Sides A and B are different</li>
+            <li>60% cotton, 40% linen</li>
+          </ul>
+  
+          <div class="cushion-options">
+            <p class="label">SIZE</p>
+            <p class="label">PRICE</p>
+            <p>40 cms X 40 cms</p>
+            <p>£75 (cover only £68)</p>
+            <p>50 cms X 50 cms</p>
+            <p>£88 (cover only £79)</p>
+          </div>
+        </div>
+  
+      </div> <!-- ENDS class="cushion-wrapper" -->
+      
+      <div class="cushion-wrapper">
+  
+        <div class="cushion-img">
+          <img id="iris2" src="./images/cushion-gallery/iris-2-A.jpeg" />
+        </div>
+  
+        <div class="cushion-thumb-wrapper">
+            <div class="cushion-thumb"           
+            onclick="loadCushionImg(
+              'iris2',
+              'iris-2-A.jpeg')">
+            <img src="./images/cushion-gallery/iris-2-A.jpeg" />
+            <p>Front design</p>
+          </div>
+          <div class="cushion-thumb"
+            onclick="loadCushionImg(
+              'iris2',
+              'iris-2-B.jpeg')">
+            <img src="./images/cushion-gallery/iris-2-B.jpeg" />
+            <p>Back design</p>
+          </div>
+        </div>
+  
+        <div class="cushion-details">
+          <h2>Iris 2</h2>
+          <ul>
+            <li>Silk edging</li>
+            <li>Sides A and B are different</li>
+            <li>100% polyester velvet</li>
+          </ul>
+  
+          <div class="cushion-options">
+            <p class="label">SIZE</p>
+            <p class="label">PRICE</p>
+            <p>40 cms X 40 cms</p>
+            <p>£75 (cover only £68)</p>
+            <p>50 cms X 50 cms</p>
+            <p>£88 (cover only £79)</p>
+          </div>
+        </div>
+  
+      </div> <!-- ENDS class="cushion-wrapper" -->
+      
+      <div class="cushion-wrapper">
+  
+        <div class="cushion-img">
+          <img id="iris3" src="./images/cushion-gallery/iris-3-A.jpeg" />
+        </div>
+  
+        <div class="cushion-thumb-wrapper">
+            <div class="cushion-thumb"           
+            onclick="loadCushionImg(
+              'iris3',
+              'iris-3-A.jpeg')">
+            <img src="./images/cushion-gallery/iris-3-A.jpeg" />
+            <p>Front design</p>
+          </div>
+          <div class="cushion-thumb"
+            onclick="loadCushionImg(
+              'iris3',
+              'iris-3-B.jpeg')">
+            <img src="./images/cushion-gallery/iris-3-B.jpeg" />
+            <p>Back design</p>
+          </div>
+        </div>
+  
+        <div class="cushion-details">
+          <h2>Iris 3</h2>
+          <ul>
+            <li>Silk piping with loops at the corners</li>
+            <li>Sides A and B are different</li>
+            <li>60% cotton, 40% linen</li>
+          </ul>
+  
+          <div class="cushion-options">
+            <p class="label">SIZE</p>
+            <p class="label">PRICE</p>
+            <p>40 cms X 40 cms</p>
+            <p>£75 (cover only £68)</p>
+            <p>50 cms X 50 cms</p>
+            <p>£88 (cover only £79)</p>
+          </div>
+        </div>
+  
+      </div> <!-- ENDS class="cushion-wrapper" -->
+      
+      <div class="cushion-wrapper">
+  
+        <div class="cushion-img">
+          <img id="cotoneaster" src="./images/cushion-gallery/cotoneaster-A.jpeg" />
+        </div>
+  
+        <div class="cushion-thumb-wrapper">
+            <div class="cushion-thumb"           
+            onclick="loadCushionImg(
+              'cotoneaster',
+              'cotoneaster-A.jpeg')">
+            <img src="./images/cushion-gallery/cotoneaster-A.jpeg" />
+            <p>Front design</p>
+          </div>
+          <div class="cushion-thumb"
+            onclick="loadCushionImg(
+              'cotoneaster',
+              'cotoneaster-B.jpeg')">
+            <img src="./images/cushion-gallery/cotoneaster-B.jpeg" />
+            <p>Back design</p>
+          </div>
+        </div>
+  
+        <div class="cushion-details">
+          <h2>Cotoneaster</h2>
+          <ul>
+            <li>Velvet ribbon trim on one side.</li>
+            <li>Printed with the same design on both sides.</li>
+            <li>60% cotton, 40% linen.</li>
+          </ul>
+  
+          <div class="cushion-options">
+            <p class="label">SIZE</p>
+            <p class="label">PRICE</p>
+            <p>40 cms X 40 cms</p>
+            <p>£75 (cover only £68)</p>
+            <p>50 cms X 50 cms</p>
+            <p>£88 (cover only £79)</p>
+          </div>
+        </div>
+  
+      </div> <!-- ENDS class="cushion-wrapper" -->
+      
+      <div class="cushion-wrapper">
+  
+        <div class="cushion-img">
+          <img id="viburnumOpulus" src="./images/cushion-gallery/viburnum-opulus-A.jpeg" />
+        </div>
+  
+        <div class="cushion-thumb-wrapper">
+            <div class="cushion-thumb"           
+            onclick="loadCushionImg(
+              'viburnumOpulus',
+              'viburnum-opulus-A.jpeg')">
+            <img src="./images/cushion-gallery/viburnum-opulus-A.jpeg" />
+            <p>Front design</p>
+          </div>
+          <div class="cushion-thumb"
+            onclick="loadCushionImg(
+              'viburnumOpulus',
+              'viburnum-opulus-B.jpeg')">
+            <img src="./images/cushion-gallery/viburnum-opulus-B.jpeg" />
+            <p>Back design</p>
+          </div>
+        </div>
+  
+        <div class="cushion-details">
+          <h2>Viburnum Opulus</h2>
+          <ul>
+            <li>Silk piping</li>
+            <li>Sides A and B are different</li>
+            <li>60% cotton, 40% linen.</li>
+          </ul>
+  
+          <div class="cushion-options">
+            <p class="label">SIZE</p>
+            <p class="label">PRICE</p>
+            <p>40 cms X 40 cms</p>
+            <p>£75 (cover only £68)</p>
+            <p>50 cms X 50 cms</p>
+            <p>£88 (cover only £79)</p>
+          </div>
+        </div>
+  
+      </div> <!-- ENDS class="cushion-wrapper" -->
+      
+      <div class="cushion-wrapper">
+  
+        <div class="cushion-img">
+          <img id="dahlia" src="./images/cushion-gallery/dahlia-A.jpeg" />
+        </div>
+  
+        <div class="cushion-thumb-wrapper">
+            <div class="cushion-thumb"           
+            onclick="loadCushionImg(
+              'dahlia',
+              'dahlia-A.jpeg')">
+            <img src="./images/cushion-gallery/dahlia-A.jpeg" />
+            <p>Front design</p>
+          </div>
+          <div class="cushion-thumb"
+            onclick="loadCushionImg(
+              'dahlia',
+              'dahlia-B.jpeg')">
+            <img src="./images/cushion-gallery/dahlia-B.jpeg" />
+            <p>Back design</p>
+          </div>
+        </div>
+  
+        <div class="cushion-details">
+          <h2>Dahlia</h2>
+          <ul>
+            <li>Silk  frill</li>
+            <li>Printed with the same design on both sides</li>
+            <li>100% polyester velvet</li>
+          </ul>
+  
+          <div class="cushion-options">
+            <p class="label">SIZE</p>
+            <p class="label">PRICE</p>
+            <p>40 cms X 40 cms</p>
+            <p>£75 (cover only £68)</p>
+            <p>50 cms X 50 cms</p>
+            <p>£88 (cover only £79)</p>
+          </div>
+        </div>
+  
+      </div> <!-- ENDS class="cushion-wrapper" -->
+      
+      <div class="cushion-wrapper">
+  
+        <div class="cushion-img">
+          <img id="cyclamen" src="./images/cushion-gallery/cyclamen-A.jpeg" />
+        </div>
+  
+        <div class="cushion-thumb-wrapper">
+            <div class="cushion-thumb"           
+            onclick="loadCushionImg(
+              'cyclamen',
+              'cyclamen-A.jpeg')">
+            <img src="./images/cushion-gallery/cyclamen-A.jpeg" />
+            <p>Front design</p>
+          </div>
+          <div class="cushion-thumb"
+            onclick="loadCushionImg(
+              'cyclamen',
+              'cyclamen-B.jpeg')">
+            <img src="./images/cushion-gallery/cyclamen-B.jpeg" />
+            <p>Back design</p>
+          </div>
+        </div>
+  
+        <div class="cushion-details">
+          <h2>Cyclamen</h2>
+          <ul>
+            <li>Silk piping</li>
+            <li>Printed with the same design on both sides</li>
+            <li>60% cotton, 40% linen</li>
+          </ul>
+  
+          <div class="cushion-options">
+            <p class="label">SIZE</p>
+            <p class="label">PRICE</p>
+            <p>40 cms X 30 cms</p>
+            <p>£75 (cover only £68)</p>
+          </div>
+        </div>
+  
+      </div> <!-- ENDS class="cushion-wrapper" -->
+      
+      <div class="cushion-wrapper">
+  
+        <div class="cushion-img">
+          <img id="sage1" src="./images/cushion-gallery/sage-1-A.jpeg" />
+        </div>
+  
+        <div class="cushion-thumb-wrapper">
+            <div class="cushion-thumb"           
+            onclick="loadCushionImg(
+              'sage1',
+              'sage-1-A.jpeg')">
+            <img src="./images/cushion-gallery/sage-1-A.jpeg" />
+            <p>Front design</p>
+          </div>
+          <div class="cushion-thumb"
+            onclick="loadCushionImg(
+              'sage1',
+              'sage-1-B.jpeg')">
+            <img src="./images/cushion-gallery/sage-1-B.jpeg" />
+            <p>Back design</p>
+          </div>
+        </div>
+  
+        <div class="cushion-details">
+          <h2>Sage 1</h2>
+          <ul>
+            <li>Silk piping</li>
+            <li>Printed with the same design on both sides</li>
+            <li>60% cotton, 40% linen</li>
+          </ul>
+  
+          <div class="cushion-options">
+            <p class="label">SIZE</p>
+            <p class="label">PRICE</p>
+            <p>40 cms X 40 cms</p>
+            <p>£75 (cover only £68)</p>
+            <p>50 cms X 50 cms</p>
+            <p>£88 (cover only £79)</p>
+          </div>
+        </div>
+  
+      </div> <!-- ENDS class="cushion-wrapper" -->
+      
+      <div class="cushion-wrapper">
+  
+        <div class="cushion-img">
+          <img id="sage3" src="./images/cushion-gallery/sage-3-A.jpeg" />
+        </div>
+  
+        <div class="cushion-thumb-wrapper">
+            <div class="cushion-thumb"           
+            onclick="loadCushionImg(
+              'sage3',
+              'sage-3-A.jpeg')">
+            <img src="./images/cushion-gallery/sage-3-A.jpeg" />
+            <p>Front design</p>
+          </div>
+          <div class="cushion-thumb"
+            onclick="loadCushionImg(
+              'sage3',
+              'sage-3-B.jpeg')">
+            <img src="./images/cushion-gallery/sage-3-B.jpeg" />
+            <p>Back design</p>
+          </div>
+        </div>
+  
+        <div class="cushion-details">
+          <h2>Sage 3</h2>
+          <ul>
+            <li>Self piping</li>
+            <li>Sides A and B are different</li>
+            <li>60% cotton, 40% linen</li>
+          </ul>
+  
+          <div class="cushion-options">
+            <p class="label">SIZE</p>
+            <p class="label">PRICE</p>
+            <p>40 cms X 40 cms</p>
+            <p>£75 (cover only £68)</p>
+            <p>50 cms X 50 cms</p>
+            <p>£88 (cover only £79)</p>
+          </div>
+        </div>
+  
+      </div> <!-- ENDS class="cushion-wrapper" -->
+      
+      <div class="cushion-wrapper">
+  
+        <div class="cushion-img">
+          <img id="sage4" src="./images/cushion-gallery/sage-4-A.jpeg" />
+        </div>
+  
+        <div class="cushion-thumb-wrapper">
+            <div class="cushion-thumb"           
+            onclick="loadCushionImg(
+              'sage4',
+              'sage-4-A.jpeg')">
+            <img src="./images/cushion-gallery/sage-4-A.jpeg" />
+            <p>Front design</p>
+          </div>
+          <div class="cushion-thumb"
+            onclick="loadCushionImg(
+              'sage4',
+              'sage-4-B.jpeg')">
+            <img src="./images/cushion-gallery/sage-4-B.jpeg" />
+            <p>Back design</p>
+          </div>
+        </div>
+  
+        <div class="cushion-details">
+          <h2>Sage 4</h2>
+          <ul>
+            <li>Silk piping</li>
+            <li>Printed with the same design on both sides</li>
+            <li>60% cotton, 40% linen</li>
+          </ul>
+  
+          <div class="cushion-options">
+            <p class="label">SIZE</p>
+            <p class="label">PRICE</p>
+            <p>40 cms X 40 cms</p>
+            <p>£75 (cover only £68)</p>
+            <p>50 cms X 50 cms</p>
+            <p>£88 (cover only £79)</p>
+          </div>
+        </div>
+  
+      </div> <!-- ENDS class="cushion-wrapper" -->
+      
+      <div class="cushion-wrapper">
+  
+        <div class="cushion-img">
+          <img id="sage5" src="./images/cushion-gallery/sage-5-A.jpeg" />
+        </div>
+  
+        <div class="cushion-thumb-wrapper">
+            <div class="cushion-thumb"           
+            onclick="loadCushionImg(
+              'sage5',
+              'sage-5-A.jpeg')">
+            <img src="./images/cushion-gallery/sage-5-A.jpeg" />
+            <p>Front design</p>
+          </div>
+          <div class="cushion-thumb"
+            onclick="loadCushionImg(
+              'sage5',
+              'sage-5-B.jpeg')">
+            <img src="./images/cushion-gallery/sage-5-B.jpeg" />
+            <p>Back design</p>
+          </div>
+        </div>
+  
+        <div class="cushion-details">
+          <h2>Sage 5</h2>
+          <ul>
+            <li>Silk piping</li>
+            <li>Printed with the same design on both sides</li>
+            <li>100% polyester velvet</li>
+          </ul>
+  
+          <div class="cushion-options">
+            <p class="label">SIZE</p>
+            <p class="label">PRICE</p>
+            <p>40 cms X 40 cms</p>
+            <p>£75 (cover only £68)</p>
+            <p>50 cms X 50 cms</p>
+            <p>£88 (cover only £79)</p>
+          </div>
+        </div>
+  
+      </div> <!-- ENDS class="cushion-wrapper" -->
+      
+      <div class="cushion-wrapper">
+  
+        <div class="cushion-img">
+          <img id="japaneseAnemone" src="./images/cushion-gallery/japanese-anemone-A.jpeg" />
+        </div>
+  
+        <div class="cushion-thumb-wrapper">
+            <div class="cushion-thumb"           
+            onclick="loadCushionImg(
+              'japaneseAnemone',
+              'japanese-anemone-A.jpeg')">
+            <img src="./images/cushion-gallery/japanese-anemone-A.jpeg" />
+            <p>Front design</p>
+          </div>
+          <div class="cushion-thumb"
+            onclick="loadCushionImg(
+              'japaneseAnemone',
+              'japanese-anemone-B.jpeg')">
+            <img src="./images/cushion-gallery/japanese-anemone-B.jpeg" />
+            <p>Back design</p>
+          </div>
+        </div>
+  
+        <div class="cushion-details">
+          <h2>Japanese anemone</h2>
+          <ul>
+            <li>Silk piping</li>
+            <li>Sides A and B are different</li>
+            <li>60% cotton, 40% linen</li>
+          </ul>
+  
+          <div class="cushion-options">
+            <p class="label">SIZE</p>
+            <p class="label">PRICE</p>
+            <p>40 cms X 40 cms</p>
+            <p>£75 (cover only £68)</p>
+            <p>50 cms X 50 cms</p>
+            <p>£88 (cover only £79)</p>
+          </div>
+        </div>
+  
+      </div> <!-- ENDS class="cushion-wrapper" -->
+           
 		</div> <!-- ends #content-->
 
+    <footer>
+      &copy; Elizabeth Coventry - All rights reserved 2022
+      &nbsp; | &nbsp;
+      <a class="link" href="mailto:xxx@xxx.com">Contact Elizabeth</a>
+    </footer>
+
+    <script src="./js/index.js"></script>
+    <!-- <script src="./js/cushion-metadata.js"></script> -->
+
+      
   </body>
 
 </html>

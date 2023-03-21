@@ -40,6 +40,12 @@
   margin: 0 50px;
 }
 
+#about-text > p
+{
+  font-size: 1.1rem;
+  line-height: 1.8;
+}
+
 #about-awards
 {
   width: 50%;

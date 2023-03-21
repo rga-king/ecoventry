@@ -9,9 +9,9 @@
 
   <body>
 
-		<header>
+		<header class="header-page">
 			<h1>Elizabeth M H Coventry</h1>
-			<h2>Botanical Artist</h2>
+			<!-- <h2>Botanical Artist</h2> -->
 			<nav>
 				<ul id="main-menu">
 					<li><a href="./index.html">HOME</a></li>
@@ -21,30 +21,26 @@
 					<li><span class="menu-this">FABRIC</span></li>
 					<li><a href="./about.html">ABOUT</a></li>
 					<li><a href="./order.html">ORDER</a></li>
-					<li><a href="./newsandcontact.html">NEWS & CONTACT</a></li>
+          <li><a href="./news-and-events.html">NEWS & EVENTS</a></li>
 				</ul>
 			</nav>
 		</header>
 
     <div id="content">
 
+			<div class="page-header">
+        <div>
+          <h3>FABRIC</h3>
+        </div>
+      </div>
+
       <main id="art-gallery-content">
 
 				<section id="art-gallery" class="art-gallery">
 
-					<div onclick="loadFabricViewer('fabric_vitis')">
-						<img src="./images/art-gallery/previews/late-autumn-grapevine.jpeg" />
-						<h3>GRAPEVINE FABRIC</h3>
-					</div>
-
-					<div onclick="loadFabricViewer('fabric_palm')">
-						<img src="./images/art-gallery/previews/palm-shadows.jpeg" />
-						<h3>PALM FABRIC</h3>
-					</div>
-					
-					<div onclick="loadFabricViewer('fabric_wigandia')">
-						<img src="images/art-gallery/previews/wigandia-caracasana.jpeg" />
-						<h3>WIGANDIA CARACASANA FABRIC</h3>				
+					<div onclick="loadFabricViewer('fabric_sage')">
+						<img src="./images/fabric-gallery/sage-fabric.jpeg" />
+						<h3>SAGE</h3>
 					</div>
 				
 				</section>
@@ -91,6 +87,7 @@
 			<button id="close-viewer" onclick="closeViewer()" class="noSelect">RETURN TO FABRICS</button>
     </div>
 
+		<script src="./js/fabric-metadata.js"></script>
 		<script src="./js/constants.js"></script>
 		<script src="./js/overlay-event-onclick.js"></script>
 
