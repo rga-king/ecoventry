@@ -25,6 +25,7 @@ function loadViewer(id) {
       e.innerHTML = artGallery[id][entry];
     }
   });
+  viewer.scrollTo(0, 0);
 }
 
 function loadFabricViewer(id) {
@@ -49,6 +50,7 @@ function loadFabricViewer(id) {
       e.innerHTML = fabricGallery[id][entry];
     }
   });
+  viewer.scrollTo(0, 0);
 }
 
 

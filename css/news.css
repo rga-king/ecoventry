@@ -1,5 +1,40 @@
-#news-content
+.news
 {
-  width: 60%;
+  width: 80%;
   margin: 0 auto;
+}
+
+.news >  h6
+{
+  font-size: 1.4rem;
+  margin: 7px 0 15px;
+  padding-bottom: 15px;
+  border-bottom: 1px dotted grey;
+  width: 50%;
+}
+
+.news-entry
+{
+  display: flex;
+
+}
+
+.news-txt
+{
+  /* width: 45%; */
+}
+
+.news-txt > p
+{
+  font-size: 1.2rem;
+
+
+}
+
+.news-entry > img
+{
+  width: 45%;
+  height: auto;
+  border-radius: 5px;
+  margin-left: 30px;
 }
