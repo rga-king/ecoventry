@@ -14,6 +14,7 @@
       <h1>Elizabeth M H Coventry</h1>
       <h2>Botanical Artist</h2>
       <nav>
+        <div id="menu-btn"><a onclick="toggleMenu()">MENU</a></div>
         <ul id="main-menu">
           <li><a href="./artwork.html">ARTWORK</a></li>
           <li><a href="./cards.html">CARDS</a></li>
@@ -43,11 +44,11 @@
       </div>
     </div>
 
-    <div class="product-range">
+    <div class="product-range-wrapper">
 
       <h3>PRODUCT RANGE</h3>
 
-      <div>
+      <div class="product-range">
         <div class="product">
           <h3>cushions</h3>
           <img src="./images/cushion-gallery/geranium-maderense-leaf-B.jpeg" />
@@ -55,7 +56,7 @@
 
         <div class="product">
           <h3>fabrics</h3>
-          <img src="./images/art-gallery/previews/cotoneaster.jpeg" />
+          <img src="./images/fabric-gallery/sage-fabric.jpeg" />
         </div>
 
         <div class="product">
@@ -67,10 +68,13 @@
     </div>
 
     <footer>
-      &copy; Elizabeth Coventry - All rights reserved 2022
-      &nbsp; | &nbsp;
-      <a class="link" href="mailto:xxx@xxx.com">Contact Elizabeth</a>
+      <div class="footer">
+        <a class="link" href="mailto:xxx@xxx.com">Contact Elizabeth</a>
+        <p>&copy; Elizabeth Coventry - All rights reserved 2022</p>
+      </div>
     </footer>
+
+    <script src="./js/index.js"></script>
 
   </body>
 

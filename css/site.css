@@ -7,15 +7,17 @@ header
   position: relative;
   width: 100%;
   padding-top: 40px;
-  padding-bottom: 15px;
+  padding-bottom: 10px;
   background: url('../images/art-gallery/previews/viburnum-opulus.jpeg') no-repeat;
   background-position: left 50px top -50px;
   background-size: 20%;
+  /* background-size: 320px; */
   box-shadow: 0px 23px 5px -25px rgba(0,0,0,0.87);
   text-align: center;
 }
 
-.header-page
+.
+page
 {
   padding-top: 20px;
 }
@@ -95,7 +97,7 @@ h3
 {
   display: inline;
   margin: auto;
-  margin-bottom: 15px;
+  /* margin-bottom: 15px; */
   padding: 5px 10px;
   font-size: 2rem;
   text-align: left;
@@ -106,12 +108,12 @@ h3
 
 @media only screen and (max-width: 650px) 
 {
-  h1 { font-size: 2rem; }
+  h1, h2 { font-size: 2rem; }
 }
 
 @media only screen and (max-width: 440px) 
 {
-  h1 { font-size: 1.5rem; }
+  h1, h2 { font-size: 1.5rem; }
 }
 
 p
@@ -127,8 +129,8 @@ nav
 {
   width: 100%;
   margin: 0 auto;
-  padding: 10px;
-  box-shadow: 0px -23px 5px -25px rgba(0,0,0,0.87);
+  /* padding-bottom: 10px; */
+  /* box-shadow: 0px -23px 5px -25px rgba(0,0,0,0.87); */
 
 }
 
@@ -137,9 +139,12 @@ nav
   list-style: none;
   padding-left: 0;
   margin: 0;
-  text-align: center;
+  /* text-align: center; */
   font-size: 1.25rem;
   /* display: inline-block; */
+
+  display: flex;
+  justify-content: center;
 }
 
 #main-menu li 
@@ -194,6 +199,11 @@ nav
   cursor: default;
 }
 
+div#menu-btn 
+{
+  display: none;
+}
+
 /* ---------------------------------------------------------------*/
 /* PAGE navigation */
 
@@ -222,38 +232,37 @@ nav
 
 /* ---------------------------------------------------------------*/
 
-@media only screen and (max-width: 780px) {
-
-  #main-menu li 
-  {
-    padding: 5px 5px 3px;
-  }
-
-  #main-menu a,
-  #main-menu a:visited, 
-  #main-menu a:hover
-  {
-    font-size: 1rem;
-  }
-}
 
 /* FOOTER */
 
 footer 
 {
   margin-top: 40px;
-  padding: 50px 0;
-  font-family: var(--font3);
+  padding: 30px 0;
+  /* font-family: var(--font3);
   font-size: 1.25rem;
   color: var(--grey-dark);
-  text-align: center;
+  text-align: center; */
   box-shadow: 0px -23px 5px -25px rgba(0,0,0,0.87);
 }
 
-/* footer > a
+div.footer
 {
+  /* font-family: var(--font3); */
+  font-size: 1.25rem;
+  /* color: var(--grey-dark); */
+  text-align: center;
+}
 
-} */
+div.footer > p
+{
+  margin-top: 20px;
+  padding: 0 20px;
+  font-family: var(--font3);
+  /* font-size: 1.25rem; */
+  color: var(--grey-dark);
+  /* text-align: center; */
+}
 
 /* SITE-WIDE STYLES */
 
@@ -324,3 +333,55 @@ a.link:hover
   overflow: auto;
 }
 
+
+/* @media
+   HEADER & MENU SECTION */
+
+  @media only screen and (min-width: 769px) {
+    #main-menu {
+      display: flex;
+    }
+  }
+
+@media only screen and (max-width: 900px) {
+  #main-menu {
+    font-size: 1rem;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  #main-menu {
+    flex-direction: column;
+    /* display: none; */
+    height: 0;
+    overflow: hidden;
+    transition: height 500ms ease-in-out 0ms;
+  }
+  div#menu-btn {
+    display: block;
+  }
+}
+
+@media only screen and (max-width: 780px) {
+
+  #main-menu li 
+  {
+    padding: 5px 5px 3px;
+  }
+
+  #main-menu a,
+  #main-menu a:visited, 
+  #main-menu a:hover
+  {
+    font-size: 1rem;
+  }
+}
+
+/* @media
+   FOOTER SECTION */
+
+@media only screen and (max-width: 670px) {
+  footer {  
+    font-size: 1rem;
+  }
+}

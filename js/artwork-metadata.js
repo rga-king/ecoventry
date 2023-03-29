@@ -479,6 +479,19 @@ const artGallery = {
       preview: "cotinus-coggygria.jpeg",
       main: "cotinus-coggygria-wm.jpeg"
     }
+  },
+  sorbaria: {
+    id: "038",
+    heading: "SORBARIA",
+    description: "to follow",
+    medium: "",
+    size: "",
+    original: "",
+    print: "",
+    images: {
+      preview: "sorbaria.jpg",
+      main: "sorbaria-wm.png"
+    }
   }
 }
 

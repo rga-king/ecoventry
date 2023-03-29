@@ -1,20 +1,19 @@
 /* HOME PAGE STYLES */
 
-.home-section-wrapper
+.home-section-wrapper,
+.product-range-wrapper
 {
   width: 100%;
-  box-shadow: 0px 23px 5px -25px rgba(0,0,0,0.87);
 }
 
-.artwork-feature,
-.product-range
+.home-section-wrapper
 {
-  width: 1000px;
+  box-shadow: 0px 23px 5px -25px rgba(0,0,0,0.87);
 }
 
 .intro-text
 {
-  width: 1100px;
+  /* width: 1100px; */
 }
 
 .intro-text,
@@ -28,21 +27,26 @@
 header.header-home
 {
   background-position: right 120px top -50px;
-  background-size: 20%;
+  /* background-size: 20%; */
+  background-size: 300px;
 }
 
 .intro-text
 {
+  width: 71%;
   padding: 40px 0 30px;
   background: url('../images/art-gallery/previews/clematis-edda.jpeg') no-repeat;
   background-position: left -30px top -110px;
-  background-size: 30%;
+  /* background-size: 30%; */
+  background-size: 320px;
 }
 
 .intro-text > p
 {
-  padding-left: 225px;
-  padding-right: 160px;
+  /* padding-left: 225px; */
+  padding-left: 20%;
+  /* padding-right: 160px; */
+  padding-right: 15%;
 }
 
 p.opening-para
@@ -55,7 +59,7 @@ p.opening-para
 .highlight
 {
   font-weight: 800; 
-  color: var(--green-dk);
+  color: var(--purple);
 }
 
 .about-home-copy
@@ -69,6 +73,13 @@ p.opening-para
   box-shadow: 0px 23px 5px -25px rgba(0,0,0,0.87);
 }
 
+.artwork-feature,
+.product-range
+{
+  /* width: 1000px; */
+  width: 60%;
+}
+
 .artwork-feature > div
 {
   box-shadow:  2px 2px 8px -4px rgba(94,93,93,0.87);
@@ -76,28 +87,31 @@ p.opening-para
 
 .artwork-feature > div > img
 {
-  width: 90%;
+  width: 100%;
   height: auto;
   border-radius: 5px;
 }
 
 .artwork-feature > h3,
-.product-range > h3
+.product-range-wrapper > h3
 {
   font-size: 1.5rem;
   margin: 30px 0;
   color: var(--purple);
 }
 
-.product-range > div
+.product-range
 {
   display: flex;
   justify-content: space-between;
+  /* width: 60% */
 }
 
 .product
 {
   width: 30%;
+  /* height: auto; */
+  height: 250px;
   margin: 0 0 20px 0px;
   box-shadow:  2px 2px 8px -4px rgba(94,93,93,0.87);
   border-radius: 10px;
@@ -114,6 +128,82 @@ p.opening-para
 .product > img
 {
   width: 100%;
-  height: 230px;
+  /* height: 230px; */
+  height: 100%;
   object-fit: cover;
 }
+
+
+/* @media
+   HOME HEADER SECTION */
+@media only screen and (max-width: 1249px) 
+{
+  header.header-home {background-position: right 50px top -50px}
+}
+
+@media only screen and (max-width: 1120px) 
+{
+  header.header-home {background-position: right -20px top -50px}
+  .intro-text > p {padding-left: 25%}
+}
+
+@media only screen and (max-width: 1012px) 
+{
+  header.header-home {background-position: right -70px top -50px}
+}
+
+@media only screen and (max-width: 940px) 
+{
+  header.header-home {background-position: right -100px top -50px}
+}
+
+/* @media
+   INTRO TEXT SECTION */
+@media only screen and (max-width: 1249px) 
+{
+  .intro-text {width: 90%}
+}
+
+@media only screen and (max-width: 960px) 
+{
+  .intro-text {width: 95%}
+}
+
+@media only screen and (max-width: 920px) 
+{
+  .intro-text {width: 100%}
+}
+
+@media only screen and (max-width: 768px) 
+{
+  .intro-text > p {padding-left: 30%}
+}
+
+/* @media
+   ARTWORK SECTION */
+@media only screen and (max-width: 1080px) 
+{
+  .artwork-feature, .product-range {width: 80%}
+}
+
+/* @media
+   PRODUCT SECTION */
+@media only screen and (max-width: 895px) 
+{
+  .product-range {flex-direction: column}
+  .product {width: 100%; height: 100%}
+}
+
+@media only screen and (max-width: 500px) 
+{
+  .intro-text {background-position: left -165px top -50px}  
+  .intro-text > p {
+    padding-left: 15%;
+    padding-right: 7%;
+    padding-top: 20px;
+  }
+  header.header-home {
+    background-size: 0 0;
+  }
+}
+
