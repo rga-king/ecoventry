@@ -2,25 +2,31 @@
 
 /* HEADER */
 
-header 
+header
 {
   position: relative;
   width: 100%;
   padding-top: 40px;
   padding-bottom: 10px;
   background: url('../images/art-gallery/previews/viburnum-opulus.jpeg') no-repeat;
-  background-position: left 50px top -50px;
-  background-size: 20%;
+  /* background-position: left 50px top -50px; */
+  /* background-size: 20%; */
   /* background-size: 320px; */
   box-shadow: 0px 23px 5px -25px rgba(0,0,0,0.87);
   text-align: center;
 }
 
-.
-page
+header.header-page
+{
+  background-position: left 0px top -50px;
+  background-size: 320px;
+}
+
+
+/* .page
 {
   padding-top: 20px;
-}
+} */
 
 header > h2
 {
@@ -59,25 +65,26 @@ h3
   display: flex;
   /* width: 100%; */
   justify-content: center;
+  align-items: flex-start;
   margin: 0 0 25px;
 }
 
 .page-header > div
 {
-  width: 200px;
-  margin: 0;
+  /* width: 200px; */
+  /* margin: 5px 0 0;
   border-top: 1px dotted grey;
   border-bottom: 1px dotted grey;
   display: flex;
-  justify-content: center;
+  justify-content: center; */
 }
-.page-header > div > h3
+/* .page-header > div > h3
 {
   margin: auto;
   font-size: 2rem;
   text-align: left;
   color: var(--purple);
-}
+} */
 
 .page-header > ul
 {
@@ -93,14 +100,21 @@ h3
   padding: 2px;
 }
 
-.heading-tram
+.flex-center
+{
+  display: flex;
+  justify-content: center;
+}
+
+h3.heading-tram
 {
   display: inline;
-  margin: auto;
+  margin: 0;
+  /* margin: auto; */
   /* margin-bottom: 15px; */
   padding: 5px 10px;
   font-size: 2rem;
-  text-align: left;
+  text-align: center;
   color: var(--purple);
   border-top: 1px dotted grey;
   border-bottom: 1px dotted grey;
@@ -199,9 +213,18 @@ nav
   cursor: default;
 }
 
-div#menu-btn 
+div#menu-btn
 {
   display: none;
+  font-size: 1.2rem;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.menu-icon
+{
+  padding-right: 10px;
 }
 
 /* ---------------------------------------------------------------*/
@@ -337,32 +360,39 @@ a.link:hover
 /* @media
    HEADER & MENU SECTION */
 
-  @media only screen and (min-width: 769px) {
-    #main-menu {
-      display: flex;
-    }
-  }
-
-@media only screen and (max-width: 900px) {
+/* @media only screen and (min-width: 769px) {
   #main-menu {
-    font-size: 1rem;
+    display: flex;
   }
-}
+} */
 
-@media only screen and (max-width: 768px) {
-  #main-menu {
-    flex-direction: column;
-    /* display: none; */
+@media only screen and (max-width: 810px) {
+  #main-menu-wrapper {
     height: 0;
     overflow: hidden;
     transition: height 500ms ease-in-out 0ms;
   }
+  #main-menu {
+    flex-direction: column;
+  }
+  #main-menu li {
+    padding: 5px 5px 3px;
+  }
+
+  #main-menu a,
+  #main-menu a:visited, 
+  #main-menu a:hover {
+    font-size: 1rem;
+  }
   div#menu-btn {
-    display: block;
+    display: flex;
+  }
+  header.header-page {
+    background-size: 0 0;
   }
 }
 
-@media only screen and (max-width: 780px) {
+/* @media only screen and (max-width: 810px) {
 
   #main-menu li 
   {
@@ -374,6 +404,26 @@ a.link:hover
   #main-menu a:hover
   {
     font-size: 1rem;
+  }
+} */
+
+@media only screen and (max-width: 1000px) {
+  #main-menu {
+    font-size: 1rem;
+  }
+}
+
+/* @media
+   PAGE HEADER */
+
+  @media only screen and (max-width: 1023px) {
+  .page-header {  
+    flex-direction: column;
+    align-items: center;
+  }
+  .page-header > ul {
+    margin-top: 20px;
+    padding-left: 20px;
   }
 }
 

@@ -3,7 +3,9 @@
 		<link rel="stylesheet" href="./css/root.css">
 		<link rel="stylesheet" href="./css/site.css">
     <link rel="stylesheet" href="./css/about.css">
-		<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
+		<!-- <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" /> -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<script src="https://kit.fontawesome.com/3ff063b4b8.js" crossorigin="anonymous"></script>
   </head>
 
   <body>
@@ -12,15 +14,21 @@
       <h1>Elizabeth M H Coventry</h1>
       <!-- <h2>Botanical Artist</h2> -->
       <nav>
-        <ul id="main-menu">
-          <li><a href="./index.html">HOME</a></li>
-          <li><a href="./artwork.html">ARTWORK</a></li>
-          <li><a href="./cards.html">CARDS</a></li>
-          <li><a href="./cushionsandfabric.html">CUSHIONS & FABRIC</a></li>
-          <li><a href="./order.html">ORDER</a></li>
-          <li><span class="menu-this">ABOUT</span></li>
-          <li><a href="./newsandevents.html">NEWS & EVENTS</a>
-        </ul>
+        <div id="menu-btn" onclick="toggleMenu()">
+					<i class="fa-sharp fa-solid fa-bars menu-icon"></i>
+					MENU
+				</div>
+				<div id="main-menu-wrapper">
+          <ul id="main-menu">
+            <li><a href="./index.html">HOME</a></li>
+            <li><a href="./artwork.html">ARTWORK</a></li>
+            <li><a href="./cards.html">CARDS</a></li>
+            <li><a href="./cushionsandfabric.html">CUSHIONS & FABRIC</a></li>
+            <li><a href="./order.html">ORDER</a></li>
+            <li><span class="menu-this">ABOUT</span></li>
+            <li><a href="./newsandevents.html">NEWS & EVENTS</a>
+          </ul>
+        </div>
       </nav>
     </header>
 
@@ -79,6 +87,8 @@
       </footer>
       
 		</div> <!-- ends #content-->
+
+    <script src="./js/index.js"></script>
 
   </body>
 

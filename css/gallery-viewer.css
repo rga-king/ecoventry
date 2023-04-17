@@ -32,34 +32,40 @@
 #viewer-content
 {
   display: flex;
-  /* align-items: flex-end; */
+  align-items: center;
   margin-bottom: 40px;
   border-radius: 5px;
-  /* background-color:rgba(255, 255, 255, 1); */
-  background: rgba(255, 255, 255, 1) no-repeat url(../images/art-gallery/previews/late-autumn-grapevine.jpeg);
+  background-color: rgba(255, 255, 255, 1);
+  /* background: no-repeat url(../images/art-gallery/previews/late-autumn-grapevine.jpeg); */
+  /* background: rgba(255, 255, 255, 1) no-repeat url(../images/art-gallery/previews/late-autumn-grapevine.jpeg);
   background-position: center right -50px;
-  background-size: 28%;
-  /* box-shadow:  2px 2px 8px -4px rgba(94,93,93,0.87); */
+  background-size: 28%; */
+  padding: 15px;
+
 
 }
 
 #entry,
 #entry-details
 {
+  width: 50%;
   background-color: #fff;
-  border-radius: 5px;
-  padding: 15px;
+  /* border-radius: 5px; */
 }
 
 #entry
 {
-  width: 40%;
+  font-size: 1.2rem;
+  padding-right: 20px;
 }
 
 #entry-details
 {
-  width: 60%;
+  /* width: 50%; */
   opacity: .9;
+  background: no-repeat url(../images/art-gallery/previews/late-autumn-grapevine.jpeg);
+  background-position: center right -50px;
+  background-size: 40%;
 }
 
 #viewer-img
@@ -104,7 +110,8 @@
 .entry-details ul li
 {
   display: grid;
-  grid-template-columns: .5fr 2fr;
+  /* grid-template-columns: .5fr 2fr; */
+  grid-template-columns: 120px 1fr;
   line-height: 1.3em;
   font-size: 1.1rem;
 }
@@ -164,3 +171,39 @@
 {
   outline: none !important;
 }
+
+@media only screen and (max-width: 1024px) {
+  #entry-details {
+    background-size: 0 0;
+  }
+  #viewer > div {
+    padding: 80px 30px;
+  }
+  #close-viewer {
+    right: 30px;
+  }
+}
+
+@media only screen and (max-width: 810px) {
+  #viewer-content {
+    flex-direction: column;
+  }
+  #entry,
+  #entry-details {
+    width: 100%;
+  }
+  #entry {
+    padding-right: 0;
+  }
+  /* #entry-details {
+    background-size: 0 0;
+  } */
+  #viewer > div {
+    padding: 80px 10px;
+  }
+  #close-viewer {
+    position: absolute;
+    right: calc(50% - 120px);
+  }
+}
+

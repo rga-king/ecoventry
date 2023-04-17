@@ -2,6 +2,52 @@
 *  CARDS - cards.html
 */
 
+.card-gallery-section
+{
+  margin-bottom: 40px;
+  width: 100%;
+  /* font-size: 1.25rem; */
+}
+
+.heading-cards
+{
+  width: 100%;
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-end;
+  font-size: 1.25rem;
+
+}
+
+.heading-cards > h2
+{
+  padding-right: 10px;
+}
+
+.heading-cards > p
+{
+  margin-bottom: 4px;
+}
+
+@media only screen and (max-width: 1023px) {
+  .heading-cards
+  {
+    justify-content: center;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .heading-cards
+  {
+    flex-direction: column;
+    align-items: center;
+  }
+  .heading-cards > h2
+  {
+    padding-right: 0;
+  }
+}
+
 .card-gallery /* grid control (to Major Tom) */
 {
   display: grid;
@@ -37,16 +83,3 @@
 {
   text-align: center;
 }
-
-.card-gallery-section
-{
-  margin-bottom: 40px;
-  font-size: 1.25rem;
-}
-.card-gallery-section > h2,
-.card-gallery-section > p
-{
-  display: inline;
-  margin-right: 10px;
-}
-

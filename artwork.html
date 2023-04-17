@@ -7,6 +7,7 @@
 		<link rel="stylesheet" href="./css/gallery-viewer.css">
 		<!-- <link rel="stylesheet" href="./css/product-details-grid.css"> -->
 		<!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/> -->
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
 		<script src="https://kit.fontawesome.com/3ff063b4b8.js" crossorigin="anonymous"></script>
 	</head>
 
@@ -16,25 +17,29 @@
 			<h1>Elizabeth M H Coventry</h1>
 			<!-- <h2>Botanical Artist</h2> -->
 			<nav>
-        <ul id="main-menu">
-          <li><a href="./index.html">HOME</a></li>
-          <li><span class="menu-this">ARTWORK</span></li>
-          <li><a href="./cards.html">CARDS</a></li>
-          <li><a href="./cushionsandfabric.html">CUSHIONS & FABRIC</a></li>
-          <li><a href="./order.html">ORDER</a></li>
-          <li><a href="./about.html">ABOUT</a></li>
-          <li><a href="./newsandevents.html">NEWS & EVENTS</a></li>
-        </ul>
+				<div id="menu-btn" onclick="toggleMenu()">
+					<i class="fa-sharp fa-solid fa-bars menu-icon"></i>
+					MENU
+				</div>
+				<div id="main-menu-wrapper">
+					<ul id="main-menu">
+						<li><a href="./index.html">HOME</a></li>
+						<li><span class="menu-this">ARTWORK</span></li>
+						<li><a href="./cards.html">CARDS</a></li>
+						<li><a href="./cushionsandfabric.html">CUSHIONS & FABRIC</a></li>
+						<li><a href="./order.html">ORDER</a></li>
+						<li><a href="./about.html">ABOUT</a></li>
+						<li><a href="./newsandevents.html">NEWS & EVENTS</a></li>
+					</ul>
+				</div>
       </nav>
 		</header>
 
 		<div id="content">
 
-			<div class="page-header">
-        <div>
-          <h3>ARTWORK</h3>
-        </div>
-      </div>
+			<div class="flex-center">
+				<h3 class="heading-tram">ARTWORK</h3>
+			</div>
 
 			<main id="art-gallery-content">
 
@@ -255,8 +260,8 @@
 					<div id="entry-details" class="entry-details">
 						<ul>
 							<li>
-									<span class="label">Medium</span> 
-									<span id="viewer-medium" class="value"></span>
+								<span class="label">Medium</span> 
+								<span id="viewer-medium" class="value"></span>
 							</li>
 							<li>
 								<span class="label">Size</span> 
@@ -282,7 +287,7 @@
 		<script src="./js/artwork-metadata.js"></script>
 		<script src="./js/constants.js"></script>
 		<script src="./js/overlay-event-onclick.js"></script>
-
+		<script src="./js/index.js"></script>
 
   </body>
 

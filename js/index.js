@@ -5,9 +5,10 @@ const loadCushionImg = (id, img) => {
 }
 
 const toggleMenu = () => {
-  const menu = document.getElementById('main-menu');
-  const menuHeight = menu.style.height;
-  menu.style.height = !menuHeight || menuHeight === '0px' 
-    ? '210px' 
+  const menuHeight = document.getElementById('main-menu').offsetHeight;
+  const container = document.getElementById('main-menu-wrapper');
+  const containerHeight = container.style.height;
+  container.style.height = !containerHeight || containerHeight === '0px' 
+    ? `${menuHeight}px`
     : '0px';
 }
