@@ -9,9 +9,14 @@
   margin: 0 auto;
 }
 
+.about-text-wrapper
+{
+  width: 75%;
+}
+
 .col-left
 {
-  width: 30%;
+  width: 40%;
   /* background: url('../images/art-gallery/previews/allium.png') bottom;
   background-position: 90%; */
 }
@@ -48,7 +53,9 @@
 
 #about-awards
 {
-  width: 50%;
+  /* width: 50%; */
+  width: 25%;
+  margin-top: 0;
 }
 
 figure.palm-prize,
@@ -86,4 +93,42 @@ figure.wigandia-prize > img
 {
   width: 30%;
   height: auto;
+}
+
+@media only screen and (max-width: 1024px) {
+  .col-left {
+    display: none;
+  }
+  
+  #about-content {
+    flex-direction: column;
+  }
+
+  .about-text-wrapper {
+    width: 100%;
+  }
+
+  #about-awards {
+    flex-direction: row;
+    justify-content: center;
+    width: 100%;
+    margin-top: 20px;
+  }
+
+  figure.palm-prize,
+  figure.wigandia-prize {
+    width: 30%;
+    padding-right: 10px;
+  }
+
+  figure.palm-prize > img,
+  figure.wigandia-prize > img {
+    width: 100%;
+    height: 180px;
+  }
+
+  .derwent-img {
+    width: auto;
+    height: 50px;
+  }
 }

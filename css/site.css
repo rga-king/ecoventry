@@ -100,24 +100,29 @@ h3
   padding: 2px;
 }
 
+.heading-tram
+{
+  display: inline-block;
+  padding: 5px 10px;
+  border-top: 1px dotted grey;
+  border-bottom: 1px dotted grey;
+}
+.heading-tram > h3
+{
+  font-size: 2rem;
+  color: var(--purple);
+  margin: 0;
+}
+
+.text-center
+{
+  text-align: center;
+}
+
 .flex-center
 {
   display: flex;
   justify-content: center;
-}
-
-h3.heading-tram
-{
-  display: inline;
-  margin: 0;
-  /* margin: auto; */
-  /* margin-bottom: 15px; */
-  padding: 5px 10px;
-  font-size: 2rem;
-  text-align: center;
-  color: var(--purple);
-  border-top: 1px dotted grey;
-  border-bottom: 1px dotted grey;
 }
 
 @media only screen and (max-width: 650px) 

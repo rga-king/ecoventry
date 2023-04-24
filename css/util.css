@@ -1,8 +1,14 @@
+.flex {
+  display: flex;
+}
+
+
+
 /* Cards & cushions styles [cf] */
 
 .section
 {
-  width: 80%;
+  width: 85%;
   margin: 0 auto;
   margin-bottom: 50px;
   text-align: center;
@@ -11,6 +17,7 @@
 .section-entry
 {
   display: flex;
+  justify-content: center;
   margin-top: 30px;
 }
 
@@ -19,7 +26,9 @@
   width: 40%;
   height: auto;
   object-fit: cover;
-  border-radius: 5px;
+  /* border-radius: 5px; */
+  border: 10px solid white;
+  box-shadow:  2px 2px 8px -4px rgba(94,93,93,0.87);
 }
 
 .cf-txt
@@ -39,4 +48,54 @@
 .cf-img-right
 {
   flex-direction: row-reverse;
+}
+
+.cfcc-entry
+{
+  /* width: 50%; */
+  margin-right: 20px;
+}
+
+.cfcc-entry:last-child
+{
+  margin-right: 0;
+}
+
+.cfcc-entry > img
+{
+  width: auto;
+  height: 350px;
+  object-fit: cover;
+  border: 10px solid white;
+  box-shadow:  2px 2px 8px -4px rgba(94,93,93,0.87);
+}
+
+@media only screen and (max-width: 1024px) {
+  .section {
+    width: 100%;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .section {
+    margin-bottom: 20px;
+  }
+  .section-entry {
+    flex-direction: column;
+  }
+  .section-entry > img {
+    width: auto;
+    height: 250px;
+  }
+  .cf-txt,
+  .cf-txt-right {
+    margin: 20px 0 0;
+  }
+}
+
+@media only screen and (max-width: 500px) {
+  .section-entry > img {
+    width: auto;
+    height: 150px;
+  }
 }
