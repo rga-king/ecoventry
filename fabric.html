@@ -1,5 +1,6 @@
 <html>
 	<head>
+		<meta charset=utf8 />
 		<link rel="stylesheet" href="./css/root.css">
 		<link rel="stylesheet" href="./css/site.css">
     <link rel="stylesheet" href="./css/artwork-grid.css">
@@ -34,19 +35,22 @@
 
     <div id="content">
 
-			<div class="page-header">
-        <div>
-          <h3>FABRICS</h3>
-        </div>
-      </div>
+			<div class="text-center">
+				<div class="heading-tram"><h3>FABRICS</h3></div>
+			</div>
 
       <main id="art-gallery-content">
 
 				<section id="art-gallery" class="art-gallery">
 
 					<div onclick="loadFabricViewer('fabric_sage')">
-						<img src="./images/fabric-gallery/sage-fabric.jpeg" />
+						<img src="./images/fabric-gallery/sage-fabric.jpg" />
 						<h3>SAGE</h3>
+					</div>
+
+					<div onclick="loadFabricViewer('fabric_thalictrum')">
+						<img src="./images/fabric-gallery/thalictrum-fabric.jpg" />
+						<h3>THALICTRUM</h3>
 					</div>
 				
 				</section>
@@ -57,8 +61,9 @@
 
     <footer>
       <div class="footer">
-        <a class="link" href="mailto:xxx@xxx.com">Contact Elizabeth</a>
-        <p>&copy; Elizabeth Coventry - All rights reserved 2022</p>
+        <a class="link" href="./order.html">Contact Elizabeth</a>
+        <p>&copy; Elizabeth Coventry - All rights reserved 2023.</p>
+        <p>Intellectual property protected by <a class="link" href="https://www.protectmywork.com/" target="_blank">ProtectMyWork</a>.</p>
       </div>
     </footer>
 
@@ -73,16 +78,24 @@
 					<div id="entry-details" class="entry-details">
 						<ul>
 							<li>
-									<span class="label">Detail 1</span> 
-									<span id="viewer-detail1" class="value"></span>
+									<span class="label">material</span> 
+									<span id="viewer-material" class="value"></span>
 							</li>
 							<li>
-								<span class="label">Detail 2</span> 
-								<span id="viewer-detail2" class="value"></span>
+								<span class="label">width</span> 
+								<span id="viewer-width" class="value"></span>
 							</li>
 							<li>
-								<span class="label">Detail 3</span> 
-								<span id="viewer-detail3" class="value"></span>
+								<span class="label">individual motif</span> 
+								<span id="viewer-individualMotif" class="value"></span>
+							</li>
+							<li>
+								<span class="label">repeat</span> 
+								<span id="viewer-repeat" class="value"></span>
+							</li>
+							<li>
+								<span class="label">per metre</span> 
+								<span id="viewer-perMetre" class="value"></span>
 							</li>
 						</ul>
 				</div>

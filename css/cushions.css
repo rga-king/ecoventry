@@ -10,9 +10,16 @@
   margin-bottom: 20px;
 }
 
+.cushion-imgs-wrapper
+{
+  display: flex;
+  justify-content: flex-start;
+  width: 60%;
+}
+
 .cushion-img
 {
-  width: 50%;
+  width: 80%;
   padding: 10px;
 }
 
@@ -27,7 +34,7 @@
 {
   display: flex;
   flex-direction: column;
-  width: 10%;
+  width: 20%;
   padding: 10px;
 }
 
@@ -39,10 +46,18 @@
 .cushion-thumb > img
 {
   width: 100%;
+  margin-bottom: 4px;
 }
 
-.cushion-details
+.cushion-thumb > p
 {
+  line-height: 1rem;
+}
+
+.cushion-details-wrapper
+{
+  display: flex;
+  flex-direction: column;
   width: 40%;
   /* margin: 30px auto; */
   padding: 20px;
@@ -100,4 +115,78 @@ p.label
 {
   background-color: #ac57ae;
   color: white;
+}
+
+@media only screen and (max-width: 1300px) {
+  .cushion-options {
+    width: 100%;
+    grid-template-columns: 50% 50%;
+  }
+}
+@media only screen and (max-width: 1000px) {
+  .cushion-wrapper {
+    flex-direction: column;
+  }
+  .cushion-imgs-wrapper {
+    width: 80%;
+  }
+  .cushion-details-wrapper {
+    flex-direction: row;
+    width: 90%;
+  }
+  .cushion-details {
+    width: 50%;
+    padding-right: 10px;
+  }
+  .cushion-options {
+    width: 50%;
+  }
+}
+@media only screen and (max-width: 970px) {
+  .cushion-options {
+    /* width: 100%; */
+    grid-template-columns: 50% 50%;
+  }
+}
+@media only screen and (max-width: 767px) {
+  .cushion-details-wrapper {
+    flex-direction: column;
+    width: 90%;
+  }
+  .cushion-details {
+    width: 100%;
+  }
+  .cushion-options {
+    width: 80%;
+  }
+}
+@media only screen and (max-width: 500px) {
+  .cushion-wrapper {
+    margin-bottom: 30px;
+  }
+  .cushion-details-wrapper {
+    border-left: 0;
+    padding-left: 0;
+    padding-top: 0;
+    text-align: center;
+  }
+  .cushion-options {
+    width: 100%;
+  }
+  .cushion-imgs-wrapper {
+    flex-direction: column;
+    width: calc(100% - 20px);
+  }
+  .cushion-img {
+    width: 100%;
+  }
+  .cushion-thumb-wrapper {
+    flex-direction: row;
+    justify-content: center;
+    width: 100%;
+  }
+  .cushion-thumb {
+    width: 30%;
+    padding-right: 15px;
+  }
 }

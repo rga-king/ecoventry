@@ -17,12 +17,12 @@ function loadViewer(id) {
   // load the content into gallery viewer
   artGalleryEntries.forEach((entry) => {
     console.log(entry);
-    const e = document.getElementById(`viewer-${entry}`);
-    console.log(e);
+    const elm = document.getElementById(`viewer-${entry}`);
+    console.log(elm);
     if (entry === 'img') {
-      e.src = `./images/art-gallery/${artGallery[id].images.main}`;
+      elm.src = `./images/art-gallery/${artGallery[id].images.main}`;
     } else {
-      e.innerHTML = artGallery[id][entry];
+      elm.innerHTML = artGallery[id][entry];
     }
   });
   viewer.scrollTo(0, 0);
@@ -32,7 +32,7 @@ function loadFabricViewer(id) {
 
   const viewer = document.getElementById('viewer');
 
-  // disable the scoll on art gallery content
+  // disable the scroll on fabric gallery content
   const body = document.querySelector('body');
   body.className = 'noscroll';
 
@@ -42,12 +42,12 @@ function loadFabricViewer(id) {
   // load the content into gallery viewer
   fabricGalleryEntries.forEach((entry) => {
     console.log(entry);
-    const e = document.getElementById(`viewer-${entry}`);
-    console.log(':: ', e);
+    const elm = document.getElementById(`viewer-${entry}`);
+    console.log(':: ', elm);
     if (entry === 'img') {
-      e.src = `./images/fabric-gallery/${fabricGallery[id][entry]}`;
+      elm.src = `./images/fabric-gallery/${fabricGallery[id][entry]}`;
     } else {
-      e.innerHTML = fabricGallery[id][entry];
+      elm.innerHTML = fabricGallery[id][entry];
     }
   });
   viewer.scrollTo(0, 0);

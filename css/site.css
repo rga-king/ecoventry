@@ -286,7 +286,7 @@ div.footer > p
 {
   margin-top: 20px;
   padding: 0 20px;
-  font-family: var(--font3);
+  font-family: 'Times New Roman', Times, serif;
   /* font-size: 1.25rem; */
   color: var(--grey-dark);
   /* text-align: center; */
@@ -314,6 +314,34 @@ a.link:hover
   text-decoration: none;
   color: var(--link-green);
 } */
+
+a.link-2
+{
+  display: inline-block;
+  border: 1px solid var(--green-dk);
+  border-radius: 25px;
+  padding: 5px 15px;
+  margin-top: 20px;
+  text-transform: uppercase;
+  text-decoration: none;
+  font: 1rem 'Palanquin', sans-serif;
+}
+
+a.link-2:hover
+{
+  background-color: var(--green-dk);
+  color: white;
+  /* background-color: white;
+  color: var(--purple); */
+
+  /* display: inline-block;
+  border: 1px solid var(--green-dk);
+  border-radius: 15px;
+  padding: 7px 10px;
+  margin-top: 20px;
+  text-transform: uppercase;
+  text-decoration: none; */
+}
 
 .additional-info
 {
@@ -421,7 +449,7 @@ a.link:hover
 /* @media
    PAGE HEADER */
 
-  @media only screen and (max-width: 1023px) {
+  @media only screen and (max-width: 1300px) {
   .page-header {  
     flex-direction: column;
     align-items: center;
