@@ -36,15 +36,15 @@
 
       <main id="how-to-order-content">
 
-        <form id="how-to-order-form" action="https://hapistax.com/ec-order.php" method="post">
+        <form id="how-to-order-form" action="https://hapistax.com/ec/order.php" method="post">
           <label for="first-name">First Name:</label>
-          <input type="text" name="first-name" id="first-name" class="form-input">
+          <input type="text" name="first-name" id="first-name" class="form-input" required>
           <label for="last-name">Last Name:</label>
-          <input type="text" name="last-name" id="last-name" class="form-input">
+          <input type="text" name="last-name" id="last-name" class="form-input" required>
           <label for="email">Email:</label>
-          <input type="email" name="email" id="email" class="form-input">
+          <input type="email" name="email" id="email" class="form-input" required>
           <label for="order-details">Please enter your order or enquiry details below:</label>
-          <textarea rows="4" name="order-details" id="order-details" class="form-input"></textarea>
+          <textarea rows="4" name="order-details" id="order-details" class="form-input"  required></textarea>
           <input type="submit" value="Send to Elizabeth" id="submit-order-form">
         </form>
            
