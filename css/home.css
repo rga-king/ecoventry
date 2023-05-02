@@ -99,7 +99,7 @@ p.opening-para
   border-radius: 5px;
 }
 
-.artwork-feature > h3,
+.artwork-feature > a > h3,
 .product-range-wrapper > h3
 {
   font-size: 1.5rem;
