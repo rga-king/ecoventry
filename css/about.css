@@ -11,6 +11,7 @@
 
 .about-text-wrapper
 {
+  display: flex;
   width: 75%;
 }
 
