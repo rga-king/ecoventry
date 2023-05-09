@@ -483,11 +483,11 @@ const artGallery = {
   sorbaria: {
     id: "038",
     heading: "SORBARIA",
-    description: "to follow",
-    medium: "",
-    size: "",
-    original: "",
-    print: "",
+    description: "Sorbaria sorbifolia, commonly known as false spirea, is a deciduous shrub with pinnate leaves that change colour from spring to autumn. It makes a very attractive mound of  soft colour and has panicles of white flowers in summer. <br/>My drawing is two and a half times life size.",
+    medium: "Colour pencil",
+    size: "Approx 50cmW X 30cmH",
+    original: "£400",
+    print: "£50",
     images: {
       preview: "sorbaria.jpg",
       main: "sorbaria-wm.png"
