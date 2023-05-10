@@ -34,7 +34,7 @@ const artGallery = {
     original: "Not available for sale",
     print: "£80",
     images: {
-      preview: "wigandia-caracasana.jpeg",
+      preview: "wigandia-caracasana.jpg",
       main: "wigandia-caracasana-wm.jpeg"
     }
   },
@@ -463,7 +463,7 @@ const artGallery = {
     original: "£1000",
     print: "£85",
     images: {
-      preview: "clematis-edda.jpeg",
+      preview: "clematis-edda.jpg",
       main: "clematis-edda-wm.jpeg"
     }
   },
@@ -476,7 +476,7 @@ const artGallery = {
     original: "£400",
     print: "£50",
     images: {
-      preview: "cotinus-coggygria.jpeg",
+      preview: "cotinus-coggygria.jpg",
       main: "cotinus-coggygria-wm.jpeg"
     }
   },
