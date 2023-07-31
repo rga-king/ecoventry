@@ -4,6 +4,12 @@
   margin: 0 auto 50px auto;
 }
 
+.news > h2,
+.news > h6
+{
+  width: 50%;
+}
+
 .news >  h6
 {
   font-size: 1.4rem;
@@ -55,6 +61,11 @@
 @media only screen and (max-width: 1250px) {
   .news {
     width: 50%;
+  }
+  .news > h2,
+  .news > h6
+  {
+    width: 100%;
   }
   .news-entry
   {
