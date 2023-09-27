@@ -14,15 +14,14 @@
 {
   font-size: 1.4rem;
   margin: 7px 0 15px;
-  padding-bottom: 15px;
-  border-bottom: 1px dotted grey;
   width: 50%;
 }
 
 .news-entry
 {
   display: flex;
-  /* flex-direction: column; */
+  margin-top: 10px;
+
 }
 
 .news-txt
@@ -30,6 +29,8 @@
   width: 50%;
   margin-right: 30px;
   margin-bottom: 20px;
+  padding-top: 12px;
+  border-top: 1px dotted grey;
 }
 
 .news-txt > p
@@ -47,8 +48,6 @@
 {
   width: auto;
   height: 300px;
-  /* border-radius: 5px; */
-  /* margin-left: 30px; */
   border: 10px solid white;
   box-shadow:  2px 2px 8px -4px rgba(94,93,93,0.87);
 }
