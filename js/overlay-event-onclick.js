@@ -53,12 +53,36 @@ function loadFabricViewer(id) {
   viewer.scrollTo(0, 0);
 }
 
+function loadFabricBespokeViewer(id) {
+
+  const viewer = document.getElementById('viewer-fabric-bespoke');
+
+  // disable the scroll on fabric gallery content
+  const body = document.querySelector('body');
+  body.className = 'noscroll';
+
+  // redefine the clip path
+  viewer.style.clipPath = topLeftEnd;
+
+  // load the content into gallery viewer
+  fabricBespokeGalleryEntries.forEach((entry) => {
+    console.log(entry)
+    const elm = document.getElementById(`viewer-fabric-bespoke-${entry}`);
+    if (entry === 'img') {
+      elm.src = `./images/fabric-gallery/${fabricGallery[id][entry]}`;
+    } else {
+      elm.innerHTML = fabricGallery[id][entry];
+    }
+  });
+  viewer.scrollTo(0, 0);
+}
+
 
 /*
   'Hides' the overlay
 */
-function closeViewer() {
-  const viewer = document.getElementById('viewer');
+function closeViewer(id = 'viewer') {
+  const viewer = document.getElementById(id);
   viewer.style.clipPath = topLeftStart;
 
   // Reset the art gallery page content

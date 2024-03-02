@@ -1,5 +1,6 @@
 const artGalleryEntries = ['heading', 'description', 'medium', 'size', 'original', 'print', 'img'];
 const fabricGalleryEntries = ['heading', 'description', 'material', 'width', 'individualMotif', 'repeat', 'perMetre', 'img'];
+const fabricBespokeGalleryEntries = ['heading', 'description', 'guidePrice', 'img'];
 
 const topLeftStart = 'polygon(0 0, 0 0, 0 0, 0 0)';
 const topLeftEnd = 'polygon(0 0, 100% 0, 100% 100%, 0 100%)';

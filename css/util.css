@@ -67,6 +67,7 @@
 
 .coord {
   flex-direction: row;
+  margin-bottom: 20px;
 }
 
 @media only screen and (max-width: 1024px) {

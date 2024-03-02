@@ -367,6 +367,17 @@ a.link-2:hover
   z-index: -1;
 }
 
+.section-intro {
+  width: 50%;
+  margin: 20px auto;
+  text-align: center;
+}
+
+.gallery-section-heading {
+  text-align: center;
+  margin: 30px 0 20px;
+}
+
 @media only screen and (min-width: 1570px) {
   #content
   {
@@ -422,6 +433,9 @@ a.link-2:hover
   }
   header.header-page {
     background-size: 0 0;
+  }
+  .section-intro {
+    width: 90%;
   }
 }
 

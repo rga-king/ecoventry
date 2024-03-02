@@ -4,7 +4,8 @@
 
 /* layout structure */
 
-#viewer 
+#viewer,
+#viewer-fabric-bespoke
 {
   position: fixed;
   overflow-y: scroll;
@@ -16,7 +17,8 @@
   transition: all 0.5s ease-in-out;
 }
 
-#viewer > div
+#viewer > div,
+#viewer-fabric-bespoke > div
 {
   /* width: 90%;
   margin: 40px auto; */
@@ -68,7 +70,8 @@
   background-size: 40%;
 }
 
-#viewer-img
+#viewer-img,
+#viewer-fabric-bespoke-img
 {
   width: 100%;
   height: auto;
@@ -111,7 +114,7 @@
 {
   display: grid;
   /* grid-template-columns: .5fr 2fr; */
-  grid-template-columns: 120px 1fr;
+  grid-template-columns: 130px 1fr;
   line-height: 1.3em;
   font-size: 1.1rem;
 }
@@ -139,7 +142,7 @@
   opacity: 0.9;
 }
 
-#close-viewer
+.close-viewer
 {
   position: fixed;
   right: 60px;

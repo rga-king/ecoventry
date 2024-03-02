@@ -41,23 +41,63 @@
 
 			<div class="text-center">
 				<div class="heading-tram"><h3>FABRICS</h3></div>
+				<div class="section-intro">
+					<h3>Introduction to Fabrics</h3>
+					<p>
+						All my printed curtain fabrics are inspired by my botanical pictures. Some are simple repeating patterns, others are printed to a particular length. In these cases a design is created to fit the drop and therefore the pattern repeat is the length of the curtain or blind. These bespoke printed fabrics are unique.
+					</p>
+				</div>
+
 			</div>
 
       <main id="art-gallery-content">
 
+				<h2 class="gallery-section-heading">Repeating Designs</h2>
+
 				<section id="art-gallery" class="art-gallery">
 
-					<div onclick="loadFabricViewer('fabric_sage')">
+					<div id="sage3-fabric" onclick="loadFabricViewer('fabric_sage')">
 						<img src="./images/fabric-gallery/sage-fabric.jpg" />
 						<h3>SAGE</h3>
 					</div>
 
-					<div onclick="loadFabricViewer('fabric_thalictrum')">
+					<div id="thalictrum-fabric" onclick="loadFabricViewer('fabric_thalictrum')">
 						<img src="./images/fabric-gallery/thalictrum-fabric.jpg" />
 						<h3>THALICTRUM</h3>
 					</div>
 				
 				</section>
+
+				<h2 class="gallery-section-heading">Bespoke Designs</h2>
+				<div class="section-intro">
+					<p>Once the drop length and window width is established, the design has to be re-created to fit that drop and then the number of widths calculated. This is a process that requires consultation.</p>
+					<p>The following photographs show examples of a single drop with the design especially created for a specific window.</p>
+				</div>
+				
+				<section id="art-gallery" class="art-gallery">
+
+					<div onclick="loadFabricBespokeViewer('fabric_allium')">
+						<img src="./images/fabric-gallery/allium-fabric-bespoke.jpg" />
+						<h3>ALLIUM</h3>
+					</div>
+
+					<div id="sorbaria-fabric" onclick="loadFabricBespokeViewer('fabric_sorbaria')">
+						<img src="./images/fabric-gallery/sorbaria-fabric-bespoke.jpg" />
+						<h3>SORBARIA</h3>
+					</div>
+
+					<div id="cotinus-fabric" onclick="loadFabricBespokeViewer('fabric_cotinus')">
+						<img src="./images/fabric-gallery/cotinus-fabric-bespoke.jpg" />
+						<h3>COTINUS</h3>
+					</div>
+
+					<div onclick="loadFabricBespokeViewer('fabric_honeysuckle')">
+						<img src="./images/fabric-gallery/honeysuckle-fabric-bespoke.jpg" />
+						<h3>HONEYSUCKLE</h3>
+					</div>
+				
+				</section>
+
 
       </main> <!-- ends #art-gallery-->
 
@@ -108,7 +148,30 @@
 				</div>
 			      <img id="viewer-img" src="" />
 			</div>
-			<button id="close-viewer" onclick="closeViewer()" class="noSelect">RETURN TO FABRICS</button>
+			<button class="close-viewer" onclick="closeViewer()" class="noSelect">RETURN TO FABRICS</button>
+    </div>
+
+		<div id="viewer-fabric-bespoke">
+			<div>
+				<div id="viewer-content" class="viewer-content">
+					<div id="entry">
+						<h3 id="viewer-fabric-bespoke-heading"></h3>
+						<p id="viewer-fabric-bespoke-description"></p>
+					</div>
+					<div id="entry-details" class="entry-details">
+						<ul>
+							<li>
+									<span class="label">Guide price</span> 
+									<span id="viewer-fabric-bespoke-guidePrice" class="value"></span>
+							</li>
+						</ul>
+				</div>
+					<div id="third-column">
+					</div>
+				</div>
+			      <img id="viewer-fabric-bespoke-img" src="" />
+			</div>
+			<button class="close-viewer" onclick="closeViewer('viewer-fabric-bespoke')" class="noSelect">RETURN TO FABRICS</button>
     </div>
 
 		<script src="./js/fabric-metadata.js"></script>
