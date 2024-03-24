@@ -492,6 +492,19 @@ const artGallery = {
       preview: "sorbaria.jpg",
       main: "sorbaria-wm.png"
     }
+  },
+  agapanthus: {
+    id: "039",
+    heading: "AGAPANTHUS",
+    description: "Agapanthus africanus. Native to South Africa but growing happily to 3ft in large pots in my garden. They come in shades of blue and also white. I love the dark blue one that I have drawn here.",
+    medium: "Colour pencil",
+    size: "Approx 70cmW X 40cmH",
+    original: "£1,000",
+    print: "£85",
+    images: {
+      preview: "agapanthus.jpg",
+      main: "agapanthus-wm.jpg"
+    }
   }
 }
 
